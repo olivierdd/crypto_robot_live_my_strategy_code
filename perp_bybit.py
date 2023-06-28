@@ -187,10 +187,10 @@ class PerpBybit():
                 'limit',
                 side,
                 self.convert_amount_to_precision(symbol, amount),
-                self.convert_amount_to_precision(symbol,limit),
+                self.convert_price_to_precision(symbol,limit),
                 params = {
                     'reduce_only': reduce,
-                    'takeProfit': self.convert_amount_to_precision(symbol,tp),
+                    'takeProfit': self.convert_price_to_precision(symbol,tp),
                     'orderLinkId': orderLinkId
                     },
             )
