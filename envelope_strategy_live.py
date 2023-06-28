@@ -4,8 +4,8 @@
 
 # --- IMPORT LIBS ---
 import sys
-sys.path.append('/Users/olivierdedecker/Documents/00_Dev/Python/Crypto_Robot_live/live_tools/utilities')
-#sys.path.append('/home/oddc/Crypto_Robot_live/crypto_robot_live_my_strategy_code/live_tools/utilities'))
+#sys.path.append('/Users/olivierdedecker/Documents/00_Dev/Python/Crypto_Robot_live/live_tools/utilities')
+sys.path.append('/home/oddc/crypto_robot_live/live_tools/utilities')
 import ccxt
 import ta
 import pandas as pd
@@ -21,34 +21,35 @@ import logging
 
 # --- LAUNCH ---
 # Configure the logging module
-logging.basicConfig(filename='log_file.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='/home/oddc/crypto_robot_live/my_code/log_file.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 now = datetime.now()
 current_time = now.strftime("%d/%m/%Y %H:%M:%S")
 current_time_python = now.timestamp()
-logging.info('-'*20)
-logging.info("--- Start Execution Time :", current_time, "---")
-
+logging.info('-------------------------------------------------------------------------------------')
+#logging.info("--- Start Execution Time :", current_time, "---")
+logging.info("--- Start Execution Time: %s ---", current_time)
 
 # --- PARAMETERS & VARIABLES ---
 # -- Account --
-f = open('../live_tools/secret.json')
+f = open('/home/oddc/crypto_robot_live/live_tools/secret.json')
 secret = json.load(f)
 f.close()
+logging.info("loaded json secret file")
 
 exchange_name = 'bybit'
-account_to_select = 'testnet_account'
+account_to_select = 'real_account'
 production = True
 
 # -- Coins & timeframe --
 timeframe = '1h'
-pair = "BTC/USDT:USDT"
+pair = "VET/USDT:USDT"
 leverage = 1
 logging.info(f"--- {pair} {timeframe} Leverage x {leverage} ---")
 
 # -- Indicator variable --
-ema_shifts = [0.01, 0.02, 0.03]
-ema_period = 20
+ema_shifts = [0.05, 0.1, 0.15]
+ema_period = 5
 
 # -- Rules --
 SL_ativation = False                # flag to set explicit stop loss
@@ -120,11 +121,14 @@ bybit = PerpBybit(
 # get portfolio balance data from exchange
 usdt_equity = float(bybit.get_usdt_equity())
 usdt_available_balance = float(bybit.get_usdt_available_balance())
-logging.info(f'available usdt balance : {usdt_available_balance}')
+#logging.info(f'available usdt balance : {usdt_available_balance}')
+logging.info('available usdt balance: %s', usdt_available_balance)
+
 
 # get balance, position and order data
 usd_balance = float(bybit.get_usdt_equity())
-logging.info("USD balance :", round(usd_balance, 2), "$")
+#logging.info("USD balance :", round(usd_balance, 2), "$")
+logging.info("USD balance: %.2f $", usd_balance)
 
 positions_data = bybit.get_open_position()
 position_list = [
@@ -227,7 +231,7 @@ if len(positions_data) > 0:
                 )
             # print(f'modified order:')
             # pprint.pprint(order)
-    
+
 # Create new limit orders for remaining slots
 if open_long(row) and "long" in position_type:
     for ema, ema_value in buy_ema_values.items():
@@ -243,10 +247,10 @@ if open_long(row) and "long" in position_type:
                     tp=bybit.convert_price_to_precision(pair, df.iloc[-1]['ema_base']),
                     reduce=False,
                     orderLinkId=f'{ema}{unique_id}'
-                )          
+                )
                 #print('placed buy orders:')
                 #pprint.pprint(order)
-                
+
 if open_short(row) and "short" in position_type:
     for ema, ema_value in sell_ema_values.items():
         if (ema in cancelled_shorts) or df_orders.empty:
@@ -268,5 +272,6 @@ if open_short(row) and "short" in position_type:
 # --- CLOSE ---
 now = datetime.now()
 current_time = now.strftime("%d/%m/%Y %H:%M:%S")
-logging.info("--- End Execution Time :", current_time, "---")
-logging.info()
+#logging.info("--- End Execution Time :", current_time, "---")
+logging.info("--- End Execution Time: %s ---", current_time)
+logging.info("")
