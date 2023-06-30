@@ -235,7 +235,7 @@ if len(positions_data) > 0:
 # Create new limit orders for remaining slots
 if open_long(row) and "long" in position_type:
     for ema, ema_value in buy_ema_values.items():
-        if (ema in cancelled_longs) or df_orders.empty:
+        if (ema in cancelled_longs) or df_orders.empty or len(positions_data)==0:
             logging.info(f"Place {ema} Long Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
             if production:
                 order = bybit.place_limit_order(
@@ -253,7 +253,7 @@ if open_long(row) and "long" in position_type:
 
 if open_short(row) and "short" in position_type:
     for ema, ema_value in sell_ema_values.items():
-        if (ema in cancelled_shorts) or df_orders.empty:
+        if (ema in cancelled_shorts) or df_orders.empty or len(positions_data)==0:
             logging.info(f"Place {ema} Short Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
             if production:
                 order = bybit.place_limit_order(
