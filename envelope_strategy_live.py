@@ -22,7 +22,7 @@ log_file_path = os.path.join(my_dir, 'my_code', 'log_file.txt')
 print(log_file_path)
 logging.basicConfig(filename = log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-showLog = True
+showLog = False
 
 def log_me(message):
     if showLog:
