@@ -5,10 +5,9 @@
 # --- IMPORT LIBS ---
 import os
 my_dir = "/home/oddc/crypto_robot_live/"
-lib_file_path = os.path.join(my_dir, 'utilities')
-print(lib_file_path)
+lib_file_path = os.path.join(my_dir, 'live_tools', 'utilities')
 import sys
-sys.path.append(my_dir + 'utilities')
+sys.path.append(lib_file_path)
 import ta
 from perp_bybit import *
 from datetime import datetime
