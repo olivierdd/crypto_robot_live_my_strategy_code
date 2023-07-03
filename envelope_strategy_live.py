@@ -62,7 +62,6 @@ ema_shifts = [0.05, 0.1, 0.15]
 ema_period = 5
 
 # -- Rules --
-max_coins_in_position = 1           # max number of coin positions
 nLevel = len(ema_shifts)            # max number of open positions per coin
 position_type = ["long", "short"]
 open_position_asap = True
@@ -181,9 +180,8 @@ row = df.iloc[-2]
 unique_id = f"#{uuid.uuid4()}"
 
 # Determine order size
-available_positions = max_coins_in_position #- len(df_position)
 market_price = float(df.iloc[-1]['close'])
-usdt_position_size = usdt_available_balance / available_positions
+usdt_position_size = usdt_available_balance
 usdt_order_size = (usdt_position_size*leverage) / nLevel
 log_me(f'usdt order size for new orders: {usdt_order_size} using {leverage}x leverage')
 coin_order_size = usdt_order_size / market_price
