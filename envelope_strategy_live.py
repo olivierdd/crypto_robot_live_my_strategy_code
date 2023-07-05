@@ -51,13 +51,13 @@ account_to_select = 'real_account'
 production = True
 
 # -- Coins & timeframe --
-timeframe = '1h'
+timeframe = '5m'
 pair = "VET/USDT:USDT"
 leverage = 1
 log_me(f"--- {pair} {timeframe} Leverage x {leverage} ---")
 
 # -- Indicator variable --
-ema_shifts = [0.05, 0.1, 0.15]
+ema_shifts = [0.005, 0.01, 0.015]
 ema_period = 5
 
 # -- Rules --
