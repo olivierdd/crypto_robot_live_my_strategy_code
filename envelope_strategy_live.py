@@ -26,6 +26,7 @@ showLog = False
 def log_me(message):
     if showLog:
         print(message)
+        logging.info(message)
     else:
         logging.info(message)
 
@@ -132,7 +133,7 @@ log_me('Open orders')
 log_me(df_orders)
 
 # Get data
-df = bybit.get_more_last_historical_async(pair, timeframe, 1000)
+df = bybit.get_more_last_historical_async(pair, timeframe, 5)
 
 
 # --- POPULATE INDICATORS ---

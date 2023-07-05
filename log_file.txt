@@ -1,0 +1,811 @@
+2023-07-05 11:41:57,523 - INFO - 
+2023-07-05 11:41:57,524 - INFO - --- Start Execution Time : 05/07/2023 11:41:57 ---
+2023-07-05 11:41:57,524 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:41:59,981 - INFO - available usdt balance: 675.71 $
+2023-07-05 11:42:00,167 - INFO - USD balance: 741.07 $
+2023-07-05 11:42:00,687 - INFO - Positions
+2023-07-05 11:42:00,699 - INFO -    side     size  market_price  usd_size  open_price
+0  long  32100.0       0.01982   636.222     0.01995
+2023-07-05 11:42:01,210 - INFO - Open orders
+2023-07-05 11:42:01,273 - INFO -                                 orderId                                    orderLinkId  ...    updatedTime                                     nextPageCursor
+0  4ee6291a-402b-4f0a-94e0-cfa904da22f3                                                 ...  1688550011087                                                NaN
+1  34a24f6a-854e-4a39-8e4d-39a01adbe08f                                                 ...  1688550011603                                                NaN
+2  35facb80-3dc2-48de-b1d8-590adf963cab                                                 ...  1688550011786                                                NaN
+3  71b38c93-d861-4439-b368-edb4a5ed990a  ema_high_1#da47cb7a-a638-4ede-b84d-511834172f  ...  1688550011969                                                NaN
+4  760480ea-a821-4e3e-9639-04d8862e0f26  ema_high_2#da47cb7a-a638-4ede-b84d-511834172f  ...  1688550012468                                                NaN
+5  a1719ddc-9983-48aa-bd5b-d1bce4ae9068  ema_high_3#da47cb7a-a638-4ede-b84d-511834172f  ...  1688550012651  page_args%3D4ee6291a-402b-4f0a-94e0-cfa904da22...
+
+[6 rows x 42 columns]
+2023-07-05 11:42:02,397 - INFO - Cancel sell order 71b38c93-d861-4439-b368-edb4a5ed990a
+2023-07-05 11:42:02,575 - INFO - Cancel sell order 760480ea-a821-4e3e-9639-04d8862e0f26
+2023-07-05 11:42:03,092 - INFO - Cancel sell order a1719ddc-9983-48aa-bd5b-d1bce4ae9068
+2023-07-05 11:42:03,272 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:42:03,273 - INFO - usdt order size for new orders: 225.23593549666668 using 1x leverage
+2023-07-05 11:42:03,273 - INFO - coin order size for new orders: 10854.74387935743
+2023-07-05 11:42:03,273 - INFO - rounded coin order size for new orders: 10854.0
+2023-07-05 11:42:03,273 - INFO - Active position
+2023-07-05 11:42:03,273 - INFO - Modify position TP: 10700 VET/USDT:USDT at the price of 0.0208$
+2023-07-05 11:42:03,767 - INFO - Modify position TP: 10700 VET/USDT:USDT at the price of 0.0208$
+2023-07-05 11:42:04,234 - INFO - Modify position TP: 10700 VET/USDT:USDT at the price of 0.0208$
+2023-07-05 11:42:04,407 - INFO - Place ema_high_1 Short Limit Order: 10854.0 VET/USDT:USDT at the price of 0.0209$
+2023-07-05 11:42:04,901 - INFO - Place ema_high_2 Short Limit Order: 10854.0 VET/USDT:USDT at the price of 0.021$
+2023-07-05 11:42:05,082 - INFO - Place ema_high_3 Short Limit Order: 10854.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:42:05,606 - INFO - --- End Execution Time: 05/07/2023 11:42:05 ---
+2023-07-05 11:42:05,607 - INFO - 
+2023-07-05 11:43:13,312 - INFO - 
+2023-07-05 11:43:13,312 - INFO - --- Start Execution Time : 05/07/2023 11:43:13 ---
+2023-07-05 11:43:13,313 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:43:15,485 - INFO - available usdt balance: 669.20 $
+2023-07-05 11:43:16,015 - INFO - USD balance: 738.45 $
+2023-07-05 11:43:16,513 - INFO - Positions
+2023-07-05 11:43:16,515 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 11:43:17,016 - INFO - Open orders
+2023-07-05 11:43:17,077 - INFO -                                 orderId                                    orderLinkId  ...    updatedTime                                     nextPageCursor
+0  97363b86-14c4-4859-9abe-179140626658  ema_high_1#e4391d6f-ee62-4867-a88f-823cf302a7  ...  1688550124821                                                NaN
+1  5dc219e3-0ae9-48bc-9da6-aaf216c88ebd  ema_high_2#e4391d6f-ee62-4867-a88f-823cf302a7  ...  1688550124994                                                NaN
+2  4dfbb1f6-ee5c-4048-9112-0875f42e0ba5  ema_high_3#e4391d6f-ee62-4867-a88f-823cf302a7  ...  1688550125521  page_args%3D97363b86-14c4-4859-9abe-1791406266...
+
+[3 rows x 42 columns]
+2023-07-05 11:43:18,199 - INFO - Cancel sell order 97363b86-14c4-4859-9abe-179140626658
+2023-07-05 11:43:18,371 - INFO - Cancel sell order 5dc219e3-0ae9-48bc-9da6-aaf216c88ebd
+2023-07-05 11:43:18,893 - INFO - Cancel sell order 4dfbb1f6-ee5c-4048-9112-0875f42e0ba5
+2023-07-05 11:43:19,063 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:43:19,064 - INFO - usdt order size for new orders: 223.06821241666668 using 1x leverage
+2023-07-05 11:43:19,065 - INFO - coin order size for new orders: 10750.275297188755
+2023-07-05 11:43:19,065 - INFO - rounded coin order size for new orders: 10750.0
+2023-07-05 11:43:19,065 - INFO - Place ema_low_1 Long Limit Order: 10750.0 VET/USDT:USDT at the price of 0.0207$
+2023-07-05 11:43:19,239 - INFO - Place ema_low_2 Long Limit Order: 10750.0 VET/USDT:USDT at the price of 0.0206$
+2023-07-05 11:43:19,413 - INFO - Place ema_low_3 Long Limit Order: 10750.0 VET/USDT:USDT at the price of 0.02045$
+2023-07-05 11:43:19,584 - INFO - Place ema_high_1 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.0209$
+2023-07-05 11:43:19,766 - INFO - Place ema_high_2 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.021$
+2023-07-05 11:43:19,939 - INFO - Place ema_high_3 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:43:20,121 - INFO - --- End Execution Time: 05/07/2023 11:43:20 ---
+2023-07-05 11:43:20,122 - INFO - 
+2023-07-05 11:45:02,618 - INFO - 
+2023-07-05 11:45:02,618 - INFO - --- Start Execution Time : 05/07/2023 11:45:02 ---
+2023-07-05 11:45:02,618 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:45:06,081 - INFO - available usdt balance: 667.49 $
+2023-07-05 11:45:06,250 - INFO - USD balance: 736.07 $
+2023-07-05 11:45:06,427 - INFO - Positions
+2023-07-05 11:45:06,430 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 11:45:06,618 - INFO - Open orders
+2023-07-05 11:45:06,695 - INFO -                                 orderId  ...                                     nextPageCursor
+0  9beb51ca-ec0c-4310-8443-e115ac9fb882  ...                                                NaN
+1  f0840e9a-8d47-45d2-9c44-6152dcb72ad2  ...                                                NaN
+2  f0ec6b12-a4f8-4597-b485-4db7b61f0f57  ...  page_args%3D9beb51ca-ec0c-4310-8443-e115ac9fb8...
+
+[3 rows x 42 columns]
+2023-07-05 11:45:08,023 - INFO - Cancel sell order 9beb51ca-ec0c-4310-8443-e115ac9fb882
+2023-07-05 11:45:08,516 - INFO - Cancel sell order f0840e9a-8d47-45d2-9c44-6152dcb72ad2
+2023-07-05 11:45:09,041 - INFO - Cancel sell order f0ec6b12-a4f8-4597-b485-4db7b61f0f57
+2023-07-05 11:45:09,223 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:45:09,224 - INFO - usdt order size for new orders: 222.4967667566667 using 1x leverage
+2023-07-05 11:45:09,224 - INFO - coin order size for new orders: 10722.735747309238
+2023-07-05 11:45:09,224 - INFO - rounded coin order size for new orders: 10722.0
+2023-07-05 11:45:09,224 - INFO - Place ema_low_1 Long Limit Order: 10722.0 VET/USDT:USDT at the price of 0.02065$
+2023-07-05 11:45:09,415 - INFO - Place ema_low_2 Long Limit Order: 10722.0 VET/USDT:USDT at the price of 0.02055$
+2023-07-05 11:45:09,934 - INFO - Place ema_low_3 Long Limit Order: 10722.0 VET/USDT:USDT at the price of 0.02045$
+2023-07-05 11:45:10,099 - INFO - Place ema_high_1 Short Limit Order: 10722.0 VET/USDT:USDT at the price of 0.0209$
+2023-07-05 11:45:10,264 - INFO - Place ema_high_2 Short Limit Order: 10722.0 VET/USDT:USDT at the price of 0.021$
+2023-07-05 11:45:10,436 - INFO - Place ema_high_3 Short Limit Order: 10722.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:45:10,601 - INFO - --- End Execution Time: 05/07/2023 11:45:10 ---
+2023-07-05 11:45:10,601 - INFO - 
+2023-07-05 11:50:02,364 - INFO - 
+2023-07-05 11:50:02,365 - INFO - --- Start Execution Time : 05/07/2023 11:50:02 ---
+2023-07-05 11:50:02,365 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:50:05,034 - INFO - available usdt balance: 671.33 $
+2023-07-05 11:50:05,212 - INFO - USD balance: 735.36 $
+2023-07-05 11:50:05,388 - INFO - Positions
+2023-07-05 11:50:05,401 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32166.0       0.01979  636.56514      0.0198
+2023-07-05 11:50:05,914 - INFO - Open orders
+2023-07-05 11:50:05,989 - INFO -                                 orderId  ...                                     nextPageCursor
+0  567830d8-58fa-42a9-9323-4b3404c4494d  ...                                                NaN
+1  b0840574-0951-41e1-aa0d-f4e3fcd59502  ...                                                NaN
+2  375c07f4-cf51-482b-a827-494d30e9c189  ...                                                NaN
+3  024f4b28-00fc-4659-868a-2b81c6a831a8  ...                                                NaN
+4  d235fb49-0776-4ab8-a1c7-2de68fb4f3ff  ...                                                NaN
+5  1dae7ee5-db1e-48d7-897d-c96459877142  ...  page_args%3D567830d8-58fa-42a9-9323-4b3404c449...
+
+[6 rows x 42 columns]
+2023-07-05 11:50:07,503 - INFO - Cancel sell order 024f4b28-00fc-4659-868a-2b81c6a831a8
+2023-07-05 11:50:08,001 - INFO - Cancel sell order d235fb49-0776-4ab8-a1c7-2de68fb4f3ff
+2023-07-05 11:50:08,520 - INFO - Cancel sell order 1dae7ee5-db1e-48d7-897d-c96459877142
+2023-07-05 11:50:09,040 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:50:09,041 - INFO - usdt order size for new orders: 223.77741476999998 using 1x leverage
+2023-07-05 11:50:09,041 - INFO - coin order size for new orders: 10784.45372385542
+2023-07-05 11:50:09,041 - INFO - rounded coin order size for new orders: 10784.0
+2023-07-05 11:50:09,041 - INFO - Active position
+2023-07-05 11:50:09,042 - INFO - Modify position TP: 10722 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:50:09,223 - INFO - Modify position TP: 10722 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:50:09,717 - INFO - Modify position TP: 10722 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:50:09,890 - INFO - Place ema_high_1 Short Limit Order: 10784.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:50:10,073 - INFO - Place ema_high_2 Short Limit Order: 10784.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:50:10,246 - INFO - Place ema_high_3 Short Limit Order: 10784.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:50:10,418 - INFO - --- End Execution Time: 05/07/2023 11:50:10 ---
+2023-07-05 11:50:10,419 - INFO - 
+2023-07-05 11:52:03,157 - INFO - 
+2023-07-05 11:52:03,157 - INFO - --- Start Execution Time : 05/07/2023 11:52:03 ---
+2023-07-05 11:52:03,158 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:52:05,503 - INFO - available usdt balance: 665.01 $
+2023-07-05 11:52:06,001 - INFO - USD balance: 733.70 $
+2023-07-05 11:52:06,499 - INFO - Positions
+2023-07-05 11:52:06,502 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 11:52:06,683 - INFO - Open orders
+2023-07-05 11:52:06,760 - INFO -                                 orderId  ...                                     nextPageCursor
+0  b92662f2-b1da-42b2-b0ed-54c85aae38c1  ...                                                NaN
+1  11fb9b8f-c00b-4f79-9556-e225dea97121  ...                                                NaN
+2  ca60af1e-a0bc-47f0-b5de-b2ec3e44c890  ...  page_args%3Db92662f2-b1da-42b2-b0ed-54c85aae38...
+
+[3 rows x 42 columns]
+2023-07-05 11:52:08,047 - INFO - Cancel sell order b92662f2-b1da-42b2-b0ed-54c85aae38c1
+2023-07-05 11:52:08,231 - INFO - Cancel sell order 11fb9b8f-c00b-4f79-9556-e225dea97121
+2023-07-05 11:52:08,411 - INFO - Cancel sell order ca60af1e-a0bc-47f0-b5de-b2ec3e44c890
+2023-07-05 11:52:08,908 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:52:08,909 - INFO - usdt order size for new orders: 221.67033365 using 1x leverage
+2023-07-05 11:52:08,910 - INFO - coin order size for new orders: 10682.907645783132
+2023-07-05 11:52:08,910 - INFO - rounded coin order size for new orders: 10682.0
+2023-07-05 11:52:08,910 - INFO - Place ema_low_1 Long Limit Order: 10682.0 VET/USDT:USDT at the price of 0.02065$
+2023-07-05 11:52:09,085 - INFO - Place ema_low_2 Long Limit Order: 10682.0 VET/USDT:USDT at the price of 0.02055$
+2023-07-05 11:52:09,270 - INFO - Place ema_low_3 Long Limit Order: 10682.0 VET/USDT:USDT at the price of 0.02045$
+2023-07-05 11:52:09,441 - INFO - Place ema_high_1 Short Limit Order: 10682.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:52:09,625 - INFO - Place ema_high_2 Short Limit Order: 10682.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:52:09,813 - INFO - Place ema_high_3 Short Limit Order: 10682.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:52:09,987 - INFO - --- End Execution Time: 05/07/2023 11:52:09 ---
+2023-07-05 11:52:09,988 - INFO - 
+2023-07-05 11:53:02,496 - INFO - 
+2023-07-05 11:53:02,496 - INFO - --- Start Execution Time : 05/07/2023 11:53:02 ---
+2023-07-05 11:53:02,496 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:53:05,145 - INFO - available usdt balance: 669.04 $
+2023-07-05 11:53:05,645 - INFO - USD balance: 732.68 $
+2023-07-05 11:53:06,169 - INFO - Positions
+2023-07-05 11:53:06,189 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32046.0       0.01973  632.26758     0.01975
+2023-07-05 11:53:06,712 - INFO - Open orders
+2023-07-05 11:53:06,833 - INFO -                                 orderId  ...                                     nextPageCursor
+0  1b9c5f97-8474-4139-a3a1-70c665c1c059  ...                                                NaN
+1  55d31b72-735b-4a02-b3fc-70a705091282  ...                                                NaN
+2  7694fb22-a098-4e52-b091-760f49ddfaa4  ...                                                NaN
+3  3e6c74f4-db25-4b0a-9cf7-89cf5e41a4e7  ...                                                NaN
+4  85defd2c-7d4a-4096-b518-a7b4540b713a  ...                                                NaN
+5  67448ffd-adfe-4959-adc7-50d575d51c1e  ...  page_args%3D1b9c5f97-8474-4139-a3a1-70c665c1c0...
+
+[6 rows x 42 columns]
+2023-07-05 11:53:08,172 - INFO - Cancel sell order 3e6c74f4-db25-4b0a-9cf7-89cf5e41a4e7
+2023-07-05 11:53:08,347 - INFO - Cancel sell order 85defd2c-7d4a-4096-b518-a7b4540b713a
+2023-07-05 11:53:08,518 - INFO - Cancel sell order 67448ffd-adfe-4959-adc7-50d575d51c1e
+2023-07-05 11:53:08,692 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:53:08,693 - INFO - usdt order size for new orders: 223.01458346666666 using 1x leverage
+2023-07-05 11:53:08,694 - INFO - coin order size for new orders: 10747.690769477911
+2023-07-05 11:53:08,694 - INFO - rounded coin order size for new orders: 10747.0
+2023-07-05 11:53:08,694 - INFO - Active position
+2023-07-05 11:53:08,695 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:53:08,866 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:53:09,333 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:53:09,497 - INFO - Place ema_high_1 Short Limit Order: 10747.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:53:09,679 - INFO - Place ema_high_2 Short Limit Order: 10747.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:53:09,854 - INFO - Place ema_high_3 Short Limit Order: 10747.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:53:10,027 - INFO - --- End Execution Time: 05/07/2023 11:53:10 ---
+2023-07-05 11:53:10,028 - INFO - 
+2023-07-05 11:54:02,603 - INFO - 
+2023-07-05 11:54:02,604 - INFO - --- Start Execution Time : 05/07/2023 11:54:02 ---
+2023-07-05 11:54:02,604 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:54:05,101 - INFO - available usdt balance: 668.63 $
+2023-07-05 11:54:05,272 - INFO - USD balance: 732.68 $
+2023-07-05 11:54:05,772 - INFO - Positions
+2023-07-05 11:54:05,789 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32046.0       0.01973  632.26758     0.01975
+2023-07-05 11:54:05,995 - INFO - Open orders
+2023-07-05 11:54:06,066 - INFO -                                 orderId  ...                                     nextPageCursor
+0  1b9c5f97-8474-4139-a3a1-70c665c1c059  ...                                                NaN
+1  55d31b72-735b-4a02-b3fc-70a705091282  ...                                                NaN
+2  7694fb22-a098-4e52-b091-760f49ddfaa4  ...                                                NaN
+3  173f0b42-72b7-4f45-8aa6-d4909f1596b6  ...                                                NaN
+4  f695d039-f0a3-49db-ac57-715db4eead08  ...                                                NaN
+5  2ece3d2e-c145-4367-ab30-f196301d737d  ...  page_args%3D1b9c5f97-8474-4139-a3a1-70c665c1c0...
+
+[6 rows x 42 columns]
+2023-07-05 11:54:07,719 - INFO - Cancel sell order 173f0b42-72b7-4f45-8aa6-d4909f1596b6
+2023-07-05 11:54:07,901 - INFO - Cancel sell order f695d039-f0a3-49db-ac57-715db4eead08
+2023-07-05 11:54:08,371 - INFO - Cancel sell order 2ece3d2e-c145-4367-ab30-f196301d737d
+2023-07-05 11:54:08,552 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:54:08,553 - INFO - usdt order size for new orders: 222.87570537666667 using 1x leverage
+2023-07-05 11:54:08,554 - INFO - coin order size for new orders: 10740.997849477912
+2023-07-05 11:54:08,554 - INFO - rounded coin order size for new orders: 10740.0
+2023-07-05 11:54:08,554 - INFO - Active position
+2023-07-05 11:54:08,555 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:54:08,738 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:54:09,233 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:54:09,401 - INFO - Place ema_high_1 Short Limit Order: 10740.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:54:09,584 - INFO - Place ema_high_2 Short Limit Order: 10740.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:54:09,758 - INFO - Place ema_high_3 Short Limit Order: 10740.0 VET/USDT:USDT at the price of 0.0211$
+2023-07-05 11:54:09,924 - INFO - --- End Execution Time: 05/07/2023 11:54:09 ---
+2023-07-05 11:54:09,924 - INFO - 
+2023-07-05 11:55:02,728 - INFO - 
+2023-07-05 11:55:02,728 - INFO - --- Start Execution Time : 05/07/2023 11:55:02 ---
+2023-07-05 11:55:02,729 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:55:06,701 - INFO - available usdt balance: 669.31 $
+2023-07-05 11:55:06,868 - INFO - USD balance: 733.64 $
+2023-07-05 11:55:07,363 - INFO - Positions
+2023-07-05 11:55:07,380 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32046.0       0.01976  633.22896     0.01975
+2023-07-05 11:55:07,579 - INFO - Open orders
+2023-07-05 11:55:07,641 - INFO -                                 orderId  ...                                     nextPageCursor
+0  1b9c5f97-8474-4139-a3a1-70c665c1c059  ...                                                NaN
+1  55d31b72-735b-4a02-b3fc-70a705091282  ...                                                NaN
+2  7694fb22-a098-4e52-b091-760f49ddfaa4  ...                                                NaN
+3  8c735eb5-e4ee-4f66-8566-cffe23498247  ...                                                NaN
+4  bcb25b6e-8e2b-463d-a859-fecabb51e96f  ...                                                NaN
+5  f07260e4-4e33-4764-8b22-89e67f1bd4b9  ...  page_args%3D1b9c5f97-8474-4139-a3a1-70c665c1c0...
+
+[6 rows x 42 columns]
+2023-07-05 11:55:08,751 - INFO - Cancel sell order 8c735eb5-e4ee-4f66-8566-cffe23498247
+2023-07-05 11:55:08,924 - INFO - Cancel sell order bcb25b6e-8e2b-463d-a859-fecabb51e96f
+2023-07-05 11:55:09,097 - INFO - Cancel sell order f07260e4-4e33-4764-8b22-89e67f1bd4b9
+2023-07-05 11:55:09,269 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:55:09,270 - INFO - usdt order size for new orders: 223.10430147666668 using 1x leverage
+2023-07-05 11:55:09,271 - INFO - coin order size for new orders: 10752.014528995984
+2023-07-05 11:55:09,271 - INFO - rounded coin order size for new orders: 10752.0
+2023-07-05 11:55:09,271 - INFO - Active position
+2023-07-05 11:55:09,272 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:55:09,446 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:55:09,610 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:55:09,794 - INFO - Place ema_high_1 Short Limit Order: 10752.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:55:09,968 - INFO - Place ema_high_2 Short Limit Order: 10752.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:55:10,151 - INFO - Place ema_high_3 Short Limit Order: 10752.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 11:55:10,323 - INFO - --- End Execution Time: 05/07/2023 11:55:10 ---
+2023-07-05 11:55:10,324 - INFO - 
+2023-07-05 11:56:02,844 - INFO - 
+2023-07-05 11:56:02,845 - INFO - --- Start Execution Time : 05/07/2023 11:56:02 ---
+2023-07-05 11:56:02,845 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:56:05,185 - INFO - available usdt balance: 669.24 $
+2023-07-05 11:56:05,717 - INFO - USD balance: 735.24 $
+2023-07-05 11:56:05,894 - INFO - Positions
+2023-07-05 11:56:05,914 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32046.0       0.01981  634.83126     0.01975
+2023-07-05 11:56:06,115 - INFO - Open orders
+2023-07-05 11:56:06,190 - INFO -                                 orderId  ...                                     nextPageCursor
+0  1b9c5f97-8474-4139-a3a1-70c665c1c059  ...                                                NaN
+1  55d31b72-735b-4a02-b3fc-70a705091282  ...                                                NaN
+2  7694fb22-a098-4e52-b091-760f49ddfaa4  ...                                                NaN
+3  13155db2-bd79-4653-8d3e-f219ab2a2096  ...                                                NaN
+4  83a74b12-a233-4756-8599-d5bfd0b8bc92  ...                                                NaN
+5  4d151339-6326-4ddc-a350-1b0af2612116  ...  page_args%3D1b9c5f97-8474-4139-a3a1-70c665c1c0...
+
+[6 rows x 42 columns]
+2023-07-05 11:56:07,643 - INFO - Cancel sell order 13155db2-bd79-4653-8d3e-f219ab2a2096
+2023-07-05 11:56:08,135 - INFO - Cancel sell order 83a74b12-a233-4756-8599-d5bfd0b8bc92
+2023-07-05 11:56:08,304 - INFO - Cancel sell order 4d151339-6326-4ddc-a350-1b0af2612116
+2023-07-05 11:56:08,827 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:56:08,828 - INFO - usdt order size for new orders: 223.07901685666664 using 1x leverage
+2023-07-05 11:56:08,829 - INFO - coin order size for new orders: 10750.795993092368
+2023-07-05 11:56:08,829 - INFO - rounded coin order size for new orders: 10750.0
+2023-07-05 11:56:08,829 - INFO - Active position
+2023-07-05 11:56:08,829 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:56:09,013 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:56:09,196 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:56:09,691 - INFO - Place ema_high_1 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:56:09,872 - INFO - Place ema_high_2 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:56:10,392 - INFO - Place ema_high_3 Short Limit Order: 10750.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 11:56:10,863 - INFO - --- End Execution Time: 05/07/2023 11:56:10 ---
+2023-07-05 11:56:10,863 - INFO - 
+2023-07-05 11:57:02,324 - INFO - 
+2023-07-05 11:57:02,324 - INFO - --- Start Execution Time : 05/07/2023 11:57:02 ---
+2023-07-05 11:57:02,324 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:57:05,885 - INFO - available usdt balance: 669.25 $
+2023-07-05 11:57:06,061 - INFO - USD balance: 735.24 $
+2023-07-05 11:57:06,243 - INFO - Positions
+2023-07-05 11:57:06,256 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32046.0       0.01981  634.83126     0.01975
+2023-07-05 11:57:06,449 - INFO - Open orders
+2023-07-05 11:57:06,522 - INFO -                                 orderId  ...                                     nextPageCursor
+0  1b9c5f97-8474-4139-a3a1-70c665c1c059  ...                                                NaN
+1  55d31b72-735b-4a02-b3fc-70a705091282  ...                                                NaN
+2  7694fb22-a098-4e52-b091-760f49ddfaa4  ...                                                NaN
+3  5e67a5b6-f300-44fa-a307-614dca42f332  ...                                                NaN
+4  0aef6e65-a440-4ef9-a773-6449f25c3e3f  ...                                                NaN
+5  ee68af98-2edc-4efb-8cd2-4aec3da3df59  ...  page_args%3D1b9c5f97-8474-4139-a3a1-70c665c1c0...
+
+[6 rows x 42 columns]
+2023-07-05 11:57:08,157 - INFO - Cancel sell order 5e67a5b6-f300-44fa-a307-614dca42f332
+2023-07-05 11:57:08,331 - INFO - Cancel sell order 0aef6e65-a440-4ef9-a773-6449f25c3e3f
+2023-07-05 11:57:08,495 - INFO - Cancel sell order ee68af98-2edc-4efb-8cd2-4aec3da3df59
+2023-07-05 11:57:08,667 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:57:08,668 - INFO - usdt order size for new orders: 223.0832799 using 1x leverage
+2023-07-05 11:57:08,668 - INFO - coin order size for new orders: 10751.001440963855
+2023-07-05 11:57:08,668 - INFO - rounded coin order size for new orders: 10751.0
+2023-07-05 11:57:08,668 - INFO - Active position
+2023-07-05 11:57:08,669 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:57:09,142 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:57:09,313 - INFO - Modify position TP: 10682 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:57:09,485 - INFO - Place ema_high_1 Short Limit Order: 10751.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:57:09,659 - INFO - Place ema_high_2 Short Limit Order: 10751.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:57:09,833 - INFO - Place ema_high_3 Short Limit Order: 10751.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 11:57:10,335 - INFO - --- End Execution Time: 05/07/2023 11:57:10 ---
+2023-07-05 11:57:10,335 - INFO - 
+2023-07-05 11:58:03,072 - INFO - 
+2023-07-05 11:58:03,072 - INFO - --- Start Execution Time : 05/07/2023 11:58:03 ---
+2023-07-05 11:58:03,072 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:58:06,793 - INFO - available usdt balance: 664.52 $
+2023-07-05 11:58:06,976 - INFO - USD balance: 732.94 $
+2023-07-05 11:58:07,491 - INFO - Positions
+2023-07-05 11:58:07,493 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 11:58:07,673 - INFO - Open orders
+2023-07-05 11:58:07,762 - INFO -                                 orderId  ...                                     nextPageCursor
+0  0fc89634-a17f-44dc-bdf5-79dcd83bd252  ...                                                NaN
+1  b3108490-cac3-445d-adfb-8fef1a6e7ff5  ...                                                NaN
+2  429bb2da-d78d-4ac7-8dde-c5a3a6061828  ...  page_args%3D0fc89634-a17f-44dc-bdf5-79dcd83bd2...
+
+[3 rows x 42 columns]
+2023-07-05 11:58:09,083 - INFO - Cancel sell order 0fc89634-a17f-44dc-bdf5-79dcd83bd252
+2023-07-05 11:58:09,600 - INFO - Cancel sell order b3108490-cac3-445d-adfb-8fef1a6e7ff5
+2023-07-05 11:58:10,089 - INFO - Cancel sell order 429bb2da-d78d-4ac7-8dde-c5a3a6061828
+2023-07-05 11:58:10,262 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:58:10,263 - INFO - usdt order size for new orders: 221.50537614666666 using 1x leverage
+2023-07-05 11:58:10,263 - INFO - coin order size for new orders: 10674.957886586344
+2023-07-05 11:58:10,263 - INFO - rounded coin order size for new orders: 10674.0
+2023-07-05 11:58:10,263 - INFO - Place ema_low_1 Long Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02065$
+2023-07-05 11:58:10,737 - INFO - Place ema_low_2 Long Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02055$
+2023-07-05 11:58:10,904 - INFO - Place ema_low_3 Long Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02045$
+2023-07-05 11:58:11,068 - INFO - Place ema_high_1 Short Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:58:11,250 - INFO - Place ema_high_2 Short Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:58:11,773 - INFO - Place ema_high_3 Short Limit Order: 10674.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 11:58:11,948 - INFO - --- End Execution Time: 05/07/2023 11:58:11 ---
+2023-07-05 11:58:11,948 - INFO - 
+2023-07-05 11:59:02,509 - INFO - 
+2023-07-05 11:59:02,509 - INFO - --- Start Execution Time : 05/07/2023 11:59:02 ---
+2023-07-05 11:59:02,510 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 11:59:06,417 - INFO - available usdt balance: 668.17 $
+2023-07-05 11:59:06,604 - INFO - USD balance: 731.92 $
+2023-07-05 11:59:06,787 - INFO - Positions
+2023-07-05 11:59:06,803 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32022.0       0.01978  633.39516      0.0198
+2023-07-05 11:59:07,000 - INFO - Open orders
+2023-07-05 11:59:07,069 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  a3e99bfd-533c-4833-ac8a-4f53e364fbed  ...                                                NaN
+4  ba11f99d-b398-480d-90dd-fc14b9cb2368  ...                                                NaN
+5  3a40f4e5-b7f5-4ec3-a086-ac0f668ce461  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 11:59:08,089 - INFO - Cancel sell order a3e99bfd-533c-4833-ac8a-4f53e364fbed
+2023-07-05 11:59:08,584 - INFO - Cancel sell order ba11f99d-b398-480d-90dd-fc14b9cb2368
+2023-07-05 11:59:08,757 - INFO - Cancel sell order 3a40f4e5-b7f5-4ec3-a086-ac0f668ce461
+2023-07-05 11:59:09,280 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 11:59:09,282 - INFO - usdt order size for new orders: 222.72358176666668 using 1x leverage
+2023-07-05 11:59:09,282 - INFO - coin order size for new orders: 10733.66659116466
+2023-07-05 11:59:09,282 - INFO - rounded coin order size for new orders: 10733.0
+2023-07-05 11:59:09,282 - INFO - Active position
+2023-07-05 11:59:09,282 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:59:09,773 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:59:10,296 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 11:59:10,788 - INFO - Place ema_high_1 Short Limit Order: 10733.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 11:59:10,960 - INFO - Place ema_high_2 Short Limit Order: 10733.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 11:59:11,143 - INFO - Place ema_high_3 Short Limit Order: 10733.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 11:59:11,319 - INFO - --- End Execution Time: 05/07/2023 11:59:11 ---
+2023-07-05 11:59:11,319 - INFO - 
+2023-07-05 12:00:03,111 - INFO - 
+2023-07-05 12:00:03,111 - INFO - --- Start Execution Time : 05/07/2023 12:00:03 ---
+2023-07-05 12:00:03,111 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:00:05,893 - INFO - available usdt balance: 666.51 $
+2023-07-05 12:00:06,392 - INFO - USD balance: 730.64 $
+2023-07-05 12:00:06,890 - INFO - Positions
+2023-07-05 12:00:06,906 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32022.0       0.01974  632.11428      0.0198
+2023-07-05 12:00:07,099 - INFO - Open orders
+2023-07-05 12:00:07,166 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  9fc2dbc9-3a5f-49ba-888f-9291788d9ec7  ...                                                NaN
+4  3d71256a-6ad8-43f1-ab8c-7a8cdd8a3050  ...                                                NaN
+5  d6b27241-d677-4f07-bd6d-4579c8312c58  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 12:00:08,520 - INFO - Cancel sell order 9fc2dbc9-3a5f-49ba-888f-9291788d9ec7
+2023-07-05 12:00:08,697 - INFO - Cancel sell order 3d71256a-6ad8-43f1-ab8c-7a8cdd8a3050
+2023-07-05 12:00:09,168 - INFO - Cancel sell order d6b27241-d677-4f07-bd6d-4579c8312c58
+2023-07-05 12:00:09,664 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:00:09,666 - INFO - usdt order size for new orders: 222.17086190666666 using 1x leverage
+2023-07-05 12:00:09,667 - INFO - coin order size for new orders: 10707.02948947791
+2023-07-05 12:00:09,667 - INFO - rounded coin order size for new orders: 10707.0
+2023-07-05 12:00:09,667 - INFO - Active position
+2023-07-05 12:00:09,668 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:00:10,183 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:00:10,701 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:00:11,196 - INFO - Place ema_high_1 Short Limit Order: 10707.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:00:11,379 - INFO - Place ema_high_2 Short Limit Order: 10707.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:00:11,554 - INFO - Place ema_high_3 Short Limit Order: 10707.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:00:11,735 - INFO - --- End Execution Time: 05/07/2023 12:00:11 ---
+2023-07-05 12:00:11,735 - INFO - 
+2023-07-05 12:01:02,379 - INFO - 
+2023-07-05 12:01:02,379 - INFO - --- Start Execution Time : 05/07/2023 12:01:02 ---
+2023-07-05 12:01:02,380 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:01:06,479 - INFO - available usdt balance: 665.40 $
+2023-07-05 12:01:06,656 - INFO - USD balance: 729.35 $
+2023-07-05 12:01:06,829 - INFO - Positions
+2023-07-05 12:01:06,843 - INFO -    side     size  market_price  usd_size  open_price
+0  long  32022.0        0.0197  630.8334      0.0198
+2023-07-05 12:01:07,042 - INFO - Open orders
+2023-07-05 12:01:07,118 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  fa0d1ffb-4e7a-4e8b-ad30-965c18df8dfd  ...                                                NaN
+4  6678df6f-4166-4e0e-ba97-f87c6f70a134  ...                                                NaN
+5  9444f61b-25ea-43a2-8737-e21ee311e05b  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 12:01:08,192 - INFO - Cancel sell order fa0d1ffb-4e7a-4e8b-ad30-965c18df8dfd
+2023-07-05 12:01:08,367 - INFO - Cancel sell order 6678df6f-4166-4e0e-ba97-f87c6f70a134
+2023-07-05 12:01:08,867 - INFO - Cancel sell order 9444f61b-25ea-43a2-8737-e21ee311e05b
+2023-07-05 12:01:09,040 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:01:09,041 - INFO - usdt order size for new orders: 221.79932150666664 using 1x leverage
+2023-07-05 12:01:09,042 - INFO - coin order size for new orders: 10689.123928032126
+2023-07-05 12:01:09,042 - INFO - rounded coin order size for new orders: 10689.0
+2023-07-05 12:01:09,042 - INFO - Active position
+2023-07-05 12:01:09,042 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:01:09,515 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:01:10,015 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:01:10,513 - INFO - Place ema_high_1 Short Limit Order: 10689.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:01:11,009 - INFO - Place ema_high_2 Short Limit Order: 10689.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:01:11,175 - INFO - Place ema_high_3 Short Limit Order: 10689.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:01:11,676 - INFO - --- End Execution Time: 05/07/2023 12:01:11 ---
+2023-07-05 12:01:11,676 - INFO - 
+2023-07-05 12:02:02,253 - INFO - 
+2023-07-05 12:02:02,253 - INFO - --- Start Execution Time : 05/07/2023 12:02:02 ---
+2023-07-05 12:02:02,254 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:02:05,839 - INFO - available usdt balance: 666.47 $
+2023-07-05 12:02:06,018 - INFO - USD balance: 730.32 $
+2023-07-05 12:02:06,190 - INFO - Positions
+2023-07-05 12:02:06,204 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32022.0       0.01973  631.79406      0.0198
+2023-07-05 12:02:06,396 - INFO - Open orders
+2023-07-05 12:02:06,490 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  f399e59c-3057-4e52-bda6-65c049885d73  ...                                                NaN
+4  e4dc96fe-e74b-48f0-bcf4-494f243aad82  ...                                                NaN
+5  2fde1ea3-052c-49e1-9008-32db0bce956f  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 12:02:07,881 - INFO - Cancel sell order f399e59c-3057-4e52-bda6-65c049885d73
+2023-07-05 12:02:08,056 - INFO - Cancel sell order e4dc96fe-e74b-48f0-bcf4-494f243aad82
+2023-07-05 12:02:08,227 - INFO - Cancel sell order 2fde1ea3-052c-49e1-9008-32db0bce956f
+2023-07-05 12:02:08,409 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:02:08,410 - INFO - usdt order size for new orders: 222.15790891999998 using 1x leverage
+2023-07-05 12:02:08,410 - INFO - coin order size for new orders: 10706.405249156625
+2023-07-05 12:02:08,410 - INFO - rounded coin order size for new orders: 10706.0
+2023-07-05 12:02:08,410 - INFO - Active position
+2023-07-05 12:02:08,411 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:02:08,592 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:02:08,761 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:02:08,944 - INFO - Place ema_high_1 Short Limit Order: 10706.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:02:09,126 - INFO - Place ema_high_2 Short Limit Order: 10706.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:02:09,643 - INFO - Place ema_high_3 Short Limit Order: 10706.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:02:09,817 - INFO - --- End Execution Time: 05/07/2023 12:02:09 ---
+2023-07-05 12:02:09,817 - INFO - 
+2023-07-05 12:03:02,526 - INFO - 
+2023-07-05 12:03:02,527 - INFO - --- Start Execution Time : 05/07/2023 12:03:02 ---
+2023-07-05 12:03:02,527 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:03:06,702 - INFO - available usdt balance: 667.33 $
+2023-07-05 12:03:06,871 - INFO - USD balance: 731.28 $
+2023-07-05 12:03:07,398 - INFO - Positions
+2023-07-05 12:03:07,412 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32022.0       0.01976  632.75472      0.0198
+2023-07-05 12:03:07,620 - INFO - Open orders
+2023-07-05 12:03:07,688 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  7db87ad1-c97e-4d95-ac63-d5046cf44328  ...                                                NaN
+4  bc12deb5-d58a-4bef-a80d-389d796cb0c5  ...                                                NaN
+5  62c4623e-375e-4e1e-85f9-402b198881f1  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 12:03:08,785 - INFO - Cancel sell order 7db87ad1-c97e-4d95-ac63-d5046cf44328
+2023-07-05 12:03:08,964 - INFO - Cancel sell order bc12deb5-d58a-4bef-a80d-389d796cb0c5
+2023-07-05 12:03:09,128 - INFO - Cancel sell order 62c4623e-375e-4e1e-85f9-402b198881f1
+2023-07-05 12:03:09,307 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:03:09,308 - INFO - usdt order size for new orders: 222.44189303 using 1x leverage
+2023-07-05 12:03:09,308 - INFO - coin order size for new orders: 10720.091230361444
+2023-07-05 12:03:09,308 - INFO - rounded coin order size for new orders: 10720.0
+2023-07-05 12:03:09,308 - INFO - Active position
+2023-07-05 12:03:09,309 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:03:09,481 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:03:09,666 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:03:09,840 - INFO - Place ema_high_1 Short Limit Order: 10720.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:03:10,020 - INFO - Place ema_high_2 Short Limit Order: 10720.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:03:10,204 - INFO - Place ema_high_3 Short Limit Order: 10720.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:03:10,388 - INFO - --- End Execution Time: 05/07/2023 12:03:10 ---
+2023-07-05 12:03:10,389 - INFO - 
+2023-07-05 12:04:03,077 - INFO - 
+2023-07-05 12:04:03,077 - INFO - --- Start Execution Time : 05/07/2023 12:04:03 ---
+2023-07-05 12:04:03,078 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:04:05,404 - INFO - available usdt balance: 667.56 $
+2023-07-05 12:04:05,589 - INFO - USD balance: 731.60 $
+2023-07-05 12:04:05,763 - INFO - Positions
+2023-07-05 12:04:05,785 - INFO -    side     size  market_price   usd_size  open_price
+0  long  32022.0       0.01977  633.07494      0.0198
+2023-07-05 12:04:05,993 - INFO - Open orders
+2023-07-05 12:04:06,065 - INFO -                                 orderId  ...                                     nextPageCursor
+0  afe429c8-9806-41d9-baf5-e940fb86449a  ...                                                NaN
+1  f09531d4-64e4-4167-a9c7-893397b164b5  ...                                                NaN
+2  47ac6727-6fb8-4d8f-a8c0-4b5b3236918e  ...                                                NaN
+3  ed1a4f92-9082-42f7-bf36-48bbb164cf4c  ...                                                NaN
+4  502b3e7c-082e-4020-aa78-f6baf449b699  ...                                                NaN
+5  1fe879a1-fd00-4db3-9671-aeeb59614d3a  ...  page_args%3Dafe429c8-9806-41d9-baf5-e940fb8644...
+
+[6 rows x 42 columns]
+2023-07-05 12:04:07,131 - INFO - Cancel sell order ed1a4f92-9082-42f7-bf36-48bbb164cf4c
+2023-07-05 12:04:07,629 - INFO - Cancel sell order 502b3e7c-082e-4020-aa78-f6baf449b699
+2023-07-05 12:04:08,124 - INFO - Cancel sell order 1fe879a1-fd00-4db3-9671-aeeb59614d3a
+2023-07-05 12:04:08,295 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:04:08,296 - INFO - usdt order size for new orders: 222.51879170666666 using 1x leverage
+2023-07-05 12:04:08,296 - INFO - coin order size for new orders: 10723.79719068273
+2023-07-05 12:04:08,296 - INFO - rounded coin order size for new orders: 10723.0
+2023-07-05 12:04:08,296 - INFO - Active position
+2023-07-05 12:04:08,297 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:04:08,766 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:04:09,238 - INFO - Modify position TP: 10674 VET/USDT:USDT at the price of 0.02075$
+2023-07-05 12:04:09,411 - INFO - Place ema_high_1 Short Limit Order: 10723.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:04:09,576 - INFO - Place ema_high_2 Short Limit Order: 10723.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:04:09,740 - INFO - Place ema_high_3 Short Limit Order: 10723.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:04:09,905 - INFO - --- End Execution Time: 05/07/2023 12:04:09 ---
+2023-07-05 12:04:09,905 - INFO - 
+2023-07-05 12:53:29,102 - INFO - 
+2023-07-05 12:53:29,102 - INFO - --- Start Execution Time : 05/07/2023 12:53:29 ---
+2023-07-05 12:53:29,102 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 12:53:31,779 - INFO - available usdt balance: 662.33 $
+2023-07-05 12:53:31,964 - INFO - USD balance: 730.58 $
+2023-07-05 12:53:32,137 - INFO - Positions
+2023-07-05 12:53:32,140 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 12:53:32,345 - INFO - Open orders
+2023-07-05 12:53:32,413 - INFO -                                 orderId                                    orderLinkId  ...    updatedTime                                     nextPageCursor
+0  645ade91-7e7d-4258-990e-957b90784509  ema_high_1#c5cb2e0a-aa27-48fa-8103-1e733e3d91  ...  1688551449498                                                NaN
+1  8558f7be-1f44-4ab3-8d09-1a5e4ae13d58  ema_high_2#c5cb2e0a-aa27-48fa-8103-1e733e3d91  ...  1688551449662                                                NaN
+2  2279ca7e-4050-4829-963e-222294942a87  ema_high_3#c5cb2e0a-aa27-48fa-8103-1e733e3d91  ...  1688551449827  page_args%3D645ade91-7e7d-4258-990e-957b907845...
+
+[3 rows x 42 columns]
+2023-07-05 12:53:33,097 - INFO - Cancel sell order 645ade91-7e7d-4258-990e-957b90784509
+2023-07-05 12:53:33,273 - INFO - Cancel sell order 8558f7be-1f44-4ab3-8d09-1a5e4ae13d58
+2023-07-05 12:53:33,447 - INFO - Cancel sell order 2279ca7e-4050-4829-963e-222294942a87
+2023-07-05 12:53:33,938 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 12:53:33,939 - INFO - usdt order size for new orders: 220.77778124333335 using 1x leverage
+2023-07-05 12:53:33,939 - INFO - coin order size for new orders: 10639.893071967872
+2023-07-05 12:53:33,940 - INFO - rounded coin order size for new orders: 10639.0
+2023-07-05 12:53:33,940 - INFO - Place ema_low_1 Long Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02065$
+2023-07-05 12:53:34,413 - INFO - Place ema_low_2 Long Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02055$
+2023-07-05 12:53:34,883 - INFO - Place ema_low_3 Long Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02045$
+2023-07-05 12:53:35,378 - INFO - Place ema_high_1 Short Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02085$
+2023-07-05 12:53:35,905 - INFO - Place ema_high_2 Short Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02095$
+2023-07-05 12:53:36,089 - INFO - Place ema_high_3 Short Limit Order: 10639.0 VET/USDT:USDT at the price of 0.02105$
+2023-07-05 12:53:36,262 - INFO - --- End Execution Time: 05/07/2023 12:53:36 ---
+2023-07-05 12:53:36,262 - INFO - 
+2023-07-05 13:00:03,025 - INFO - 
+2023-07-05 13:00:03,025 - INFO - --- Start Execution Time : 05/07/2023 13:00:03 ---
+2023-07-05 13:00:03,025 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:00:06,800 - INFO - available usdt balance: 660.52 $
+2023-07-05 13:00:06,971 - INFO - USD balance: 728.23 $
+2023-07-05 13:00:07,442 - INFO - Positions
+2023-07-05 13:00:07,444 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:00:07,945 - INFO - Open orders
+2023-07-05 13:00:08,019 - INFO -                                 orderId  ...                                     nextPageCursor
+0  3c2669ec-3fb4-4d11-8d5c-8856280ae9ce  ...                                                NaN
+1  e3df1f68-9c74-441f-ab72-fdf20f9e2348  ...                                                NaN
+2  814e79c7-2e84-4110-b5e0-7cc7c36713e4  ...  page_args%3D3c2669ec-3fb4-4d11-8d5c-8856280ae9...
+
+[3 rows x 42 columns]
+2023-07-05 13:00:08,650 - INFO - Cancel sell order 3c2669ec-3fb4-4d11-8d5c-8856280ae9ce
+2023-07-05 13:00:08,829 - INFO - Cancel sell order e3df1f68-9c74-441f-ab72-fdf20f9e2348
+2023-07-05 13:00:09,354 - INFO - Cancel sell order 814e79c7-2e84-4110-b5e0-7cc7c36713e4
+2023-07-05 13:00:09,532 - INFO - Cancelled 0 longs and 3 shorts
+2023-07-05 13:00:09,533 - INFO - usdt order size for new orders: 220.17475682333335 using 1x leverage
+2023-07-05 13:00:09,534 - INFO - coin order size for new orders: 11378.540404306634
+2023-07-05 13:00:09,534 - INFO - rounded coin order size for new orders: 11378.0
+2023-07-05 13:00:09,534 - INFO - Place ema_low_1 Long Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01935$
+2023-07-05 13:00:09,716 - INFO - Place ema_low_2 Long Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01925$
+2023-07-05 13:00:09,897 - INFO - Place ema_low_3 Long Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01915$
+2023-07-05 13:00:10,079 - INFO - Place ema_high_1 Short Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01955$
+2023-07-05 13:00:10,254 - INFO - Place ema_high_2 Short Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01965$
+2023-07-05 13:00:10,423 - INFO - Place ema_high_3 Short Limit Order: 11378.0 VET/USDT:USDT at the price of 0.01975$
+2023-07-05 13:00:10,601 - INFO - --- End Execution Time: 05/07/2023 13:00:10 ---
+2023-07-05 13:00:10,601 - INFO - 
+2023-07-05 13:05:03,242 - INFO - 
+2023-07-05 13:05:03,243 - INFO - --- Start Execution Time : 05/07/2023 13:05:03 ---
+2023-07-05 13:05:03,243 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:05:06,940 - INFO - available usdt balance: 660.73 $
+2023-07-05 13:05:07,127 - INFO - USD balance: 728.65 $
+2023-07-05 13:05:07,656 - INFO - Positions
+2023-07-05 13:05:07,658 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:05:07,848 - INFO - Open orders
+2023-07-05 13:05:07,925 - INFO -                                 orderId  ...                                     nextPageCursor
+0  481077c5-a535-4433-aebb-af990342a5b8  ...                                                NaN
+1  af7523c6-caea-42ea-a0eb-2aeeef4e107a  ...                                                NaN
+2  5060a46e-d553-451f-bf87-e94a09146ac7  ...                                                NaN
+3  74e551e6-fc5e-4c91-b5f7-ca69dbd4773b  ...                                                NaN
+4  4ef4af75-c67e-4f6e-9ecd-0202eb627f1f  ...  page_args%3D481077c5-a535-4433-aebb-af990342a5...
+
+[5 rows x 42 columns]
+2023-07-05 13:05:08,205 - INFO - Cancel buy order 481077c5-a535-4433-aebb-af990342a5b8
+2023-07-05 13:05:08,384 - INFO - Cancel buy order af7523c6-caea-42ea-a0eb-2aeeef4e107a
+2023-07-05 13:05:08,878 - INFO - Cancel sell order 5060a46e-d553-451f-bf87-e94a09146ac7
+2023-07-05 13:05:09,043 - INFO - Cancel sell order 74e551e6-fc5e-4c91-b5f7-ca69dbd4773b
+2023-07-05 13:05:09,224 - INFO - Cancel sell order 4ef4af75-c67e-4f6e-9ecd-0202eb627f1f
+2023-07-05 13:05:09,406 - INFO - Cancelled 2 longs and 3 shorts
+2023-07-05 13:05:09,408 - INFO - usdt order size for new orders: 220.24296948666665 using 1x leverage
+2023-07-05 13:05:09,408 - INFO - coin order size for new orders: 11294.511255726495
+2023-07-05 13:05:09,409 - INFO - rounded coin order size for new orders: 11294.0
+2023-07-05 13:05:09,409 - INFO - Place ema_low_1 Long Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0194$
+2023-07-05 13:05:09,593 - INFO - Place ema_low_2 Long Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0193$
+2023-07-05 13:05:10,092 - INFO - Place ema_low_3 Long Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0192$
+2023-07-05 13:05:10,283 - INFO - Place ema_high_1 Short Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0196$
+2023-07-05 13:05:10,469 - INFO - Place ema_high_2 Short Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0197$
+2023-07-05 13:05:10,997 - INFO - Place ema_high_3 Short Limit Order: 11294.0 VET/USDT:USDT at the price of 0.0198$
+2023-07-05 13:05:11,179 - INFO - --- End Execution Time: 05/07/2023 13:05:11 ---
+2023-07-05 13:05:11,179 - INFO - 
+2023-07-05 13:10:03,055 - INFO - 
+2023-07-05 13:10:03,056 - INFO - --- Start Execution Time : 05/07/2023 13:10:03 ---
+2023-07-05 13:10:03,056 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:10:06,299 - INFO - available usdt balance: 661.06 $
+2023-07-05 13:10:06,476 - INFO - USD balance: 728.65 $
+2023-07-05 13:10:06,969 - INFO - Positions
+2023-07-05 13:10:06,972 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:10:07,503 - INFO - Open orders
+2023-07-05 13:10:07,568 - INFO -                                 orderId  ...                                     nextPageCursor
+0  6ca3f908-b86b-4193-9788-6a9385da3c5d  ...                                                NaN
+1  a067289f-9dc5-40ee-824e-074b047cb55b  ...                                                NaN
+2  587ffc58-05b9-4c5a-a196-1f85ef8a8272  ...                                                NaN
+3  5e33f36b-01ff-4a5d-853f-4c28059013c7  ...                                                NaN
+4  1fe1a841-527e-4729-8867-679f9a0fcb2a  ...                                                NaN
+5  6f9c3b81-2892-43f3-94f5-c43ab9f21fc1  ...  page_args%3D6ca3f908-b86b-4193-9788-6a9385da3c...
+
+[6 rows x 42 columns]
+2023-07-05 13:10:07,839 - INFO - Cancel buy order 6ca3f908-b86b-4193-9788-6a9385da3c5d
+2023-07-05 13:10:08,357 - INFO - Cancel buy order a067289f-9dc5-40ee-824e-074b047cb55b
+2023-07-05 13:10:08,529 - INFO - Cancel buy order 587ffc58-05b9-4c5a-a196-1f85ef8a8272
+2023-07-05 13:10:09,056 - INFO - Cancel sell order 5e33f36b-01ff-4a5d-853f-4c28059013c7
+2023-07-05 13:10:09,228 - INFO - Cancel sell order 1fe1a841-527e-4729-8867-679f9a0fcb2a
+2023-07-05 13:10:09,410 - INFO - Cancel sell order 6f9c3b81-2892-43f3-94f5-c43ab9f21fc1
+2023-07-05 13:10:09,580 - INFO - Cancelled 3 longs and 3 shorts
+2023-07-05 13:10:09,581 - INFO - usdt order size for new orders: 220.35292772 using 1x leverage
+2023-07-05 13:10:09,582 - INFO - coin order size for new orders: 11329.199368637534
+2023-07-05 13:10:09,582 - INFO - rounded coin order size for new orders: 11329.0
+2023-07-05 13:10:09,582 - INFO - Place ema_low_1 Long Limit Order: 11329.0 VET/USDT:USDT at the price of 0.0194$
+2023-07-05 13:10:09,753 - INFO - Place ema_low_2 Long Limit Order: 11329.0 VET/USDT:USDT at the price of 0.0193$
+2023-07-05 13:10:09,934 - INFO - Place ema_low_3 Long Limit Order: 11329.0 VET/USDT:USDT at the price of 0.0192$
+2023-07-05 13:10:10,116 - INFO - Place ema_high_1 Short Limit Order: 11329.0 VET/USDT:USDT at the price of 0.01955$
+2023-07-05 13:10:10,296 - INFO - Place ema_high_2 Short Limit Order: 11329.0 VET/USDT:USDT at the price of 0.01965$
+2023-07-05 13:10:10,461 - INFO - Place ema_high_3 Short Limit Order: 11329.0 VET/USDT:USDT at the price of 0.01975$
+2023-07-05 13:10:10,650 - INFO - --- End Execution Time: 05/07/2023 13:10:10 ---
+2023-07-05 13:10:10,651 - INFO - 
+2023-07-05 13:15:02,294 - INFO - 
+2023-07-05 13:15:02,294 - INFO - --- Start Execution Time : 05/07/2023 13:15:02 ---
+2023-07-05 13:15:02,294 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:15:06,758 - INFO - available usdt balance: 661.02 $
+2023-07-05 13:15:06,947 - INFO - USD balance: 728.65 $
+2023-07-05 13:15:07,129 - INFO - Positions
+2023-07-05 13:15:07,133 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:15:07,635 - INFO - Open orders
+2023-07-05 13:15:07,703 - INFO -                                 orderId  ...                                     nextPageCursor
+0  70f5e80a-bc46-4d92-a9ed-679393be5705  ...                                                NaN
+1  333d7185-ffab-46a3-a877-750a58087246  ...                                                NaN
+2  ce0e7d4b-166b-4375-b403-ebcbac5a952d  ...                                                NaN
+3  2831e2de-3621-4f7d-9ad7-94670d7a2a1b  ...                                                NaN
+4  218bc5bf-ba98-414f-a07d-62059fb264a5  ...                                                NaN
+5  17bcee69-71ff-4448-817c-e3c7bc82f502  ...  page_args%3D70f5e80a-bc46-4d92-a9ed-679393be57...
+
+[6 rows x 42 columns]
+2023-07-05 13:15:07,993 - INFO - Cancel buy order 70f5e80a-bc46-4d92-a9ed-679393be5705
+2023-07-05 13:15:08,166 - INFO - Cancel buy order 333d7185-ffab-46a3-a877-750a58087246
+2023-07-05 13:15:08,348 - INFO - Cancel buy order ce0e7d4b-166b-4375-b403-ebcbac5a952d
+2023-07-05 13:15:08,521 - INFO - Cancel sell order 2831e2de-3621-4f7d-9ad7-94670d7a2a1b
+2023-07-05 13:15:08,694 - INFO - Cancel sell order 218bc5bf-ba98-414f-a07d-62059fb264a5
+2023-07-05 13:15:08,860 - INFO - Cancel sell order 17bcee69-71ff-4448-817c-e3c7bc82f502
+2023-07-05 13:15:09,044 - INFO - Cancelled 3 longs and 3 shorts
+2023-07-05 13:15:09,045 - INFO - usdt order size for new orders: 220.34046767666666 using 1x leverage
+2023-07-05 13:15:09,046 - INFO - coin order size for new orders: 11328.558749443016
+2023-07-05 13:15:09,046 - INFO - rounded coin order size for new orders: 11328.0
+2023-07-05 13:15:09,046 - INFO - Place ema_low_1 Long Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01935$
+2023-07-05 13:15:09,234 - INFO - Place ema_low_2 Long Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01925$
+2023-07-05 13:15:09,413 - INFO - Place ema_low_3 Long Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01915$
+2023-07-05 13:15:09,587 - INFO - Place ema_high_1 Short Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01955$
+2023-07-05 13:15:09,769 - INFO - Place ema_high_2 Short Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01965$
+2023-07-05 13:15:09,960 - INFO - Place ema_high_3 Short Limit Order: 11328.0 VET/USDT:USDT at the price of 0.01975$
+2023-07-05 13:15:10,144 - INFO - --- End Execution Time: 05/07/2023 13:15:10 ---
+2023-07-05 13:15:10,144 - INFO - 
+2023-07-05 13:20:03,057 - INFO - 
+2023-07-05 13:20:03,057 - INFO - --- Start Execution Time : 05/07/2023 13:20:03 ---
+2023-07-05 13:20:03,057 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:20:05,112 - INFO - available usdt balance: 661.03 $
+2023-07-05 13:20:05,291 - INFO - USD balance: 728.65 $
+2023-07-05 13:20:05,813 - INFO - Positions
+2023-07-05 13:20:05,815 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:20:06,001 - INFO - Open orders
+2023-07-05 13:20:06,065 - INFO -                                 orderId  ...                                     nextPageCursor
+0  3d37f5fe-d32f-4bcf-ae3b-e84d40c3178f  ...                                                NaN
+1  ceff10a1-e0b7-426d-a04a-98361a044cad  ...                                                NaN
+2  afd30473-dc48-412c-a6ff-1fc13eb17ba1  ...                                                NaN
+3  360d3d17-cba5-4f21-b068-f2404345eabb  ...                                                NaN
+4  246235e7-d88b-49b9-b77e-e9137813f1c9  ...                                                NaN
+5  c3680304-9eba-4044-817b-248e145ac7df  ...  page_args%3D3d37f5fe-d32f-4bcf-ae3b-e84d40c317...
+
+[6 rows x 42 columns]
+2023-07-05 13:20:06,335 - INFO - Cancel buy order 3d37f5fe-d32f-4bcf-ae3b-e84d40c3178f
+2023-07-05 13:20:06,829 - INFO - Cancel buy order ceff10a1-e0b7-426d-a04a-98361a044cad
+2023-07-05 13:20:07,000 - INFO - Cancel buy order afd30473-dc48-412c-a6ff-1fc13eb17ba1
+2023-07-05 13:20:07,511 - INFO - Cancel sell order 360d3d17-cba5-4f21-b068-f2404345eabb
+2023-07-05 13:20:08,027 - INFO - Cancel sell order 246235e7-d88b-49b9-b77e-e9137813f1c9
+2023-07-05 13:20:08,198 - INFO - Cancel sell order c3680304-9eba-4044-817b-248e145ac7df
+2023-07-05 13:20:08,376 - INFO - Cancelled 3 longs and 3 shorts
+2023-07-05 13:20:08,377 - INFO - usdt order size for new orders: 220.34245743666668 using 1x leverage
+2023-07-05 13:20:08,378 - INFO - coin order size for new orders: 11299.613201880342
+2023-07-05 13:20:08,378 - INFO - rounded coin order size for new orders: 11299.0
+2023-07-05 13:20:08,378 - INFO - Place ema_low_1 Long Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0194$
+2023-07-05 13:20:08,550 - INFO - Place ema_low_2 Long Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0193$
+2023-07-05 13:20:08,732 - INFO - Place ema_low_3 Long Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0192$
+2023-07-05 13:20:08,910 - INFO - Place ema_high_1 Short Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0196$
+2023-07-05 13:20:09,073 - INFO - Place ema_high_2 Short Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0197$
+2023-07-05 13:20:09,255 - INFO - Place ema_high_3 Short Limit Order: 11299.0 VET/USDT:USDT at the price of 0.0198$
+2023-07-05 13:20:09,780 - INFO - --- End Execution Time: 05/07/2023 13:20:09 ---
+2023-07-05 13:20:09,780 - INFO - 
+2023-07-05 13:25:02,457 - INFO - 
+2023-07-05 13:25:02,457 - INFO - --- Start Execution Time : 05/07/2023 13:25:02 ---
+2023-07-05 13:25:02,457 - INFO - --- VET/USDT:USDT 5m Leverage x 1 ---
+2023-07-05 13:25:05,195 - INFO - available usdt balance: 661.03 $
+2023-07-05 13:25:05,371 - INFO - USD balance: 728.65 $
+2023-07-05 13:25:05,892 - INFO - Positions
+2023-07-05 13:25:05,896 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-05 13:25:06,403 - INFO - Open orders
+2023-07-05 13:25:06,486 - INFO -                                 orderId  ...                                     nextPageCursor
+0  2df4e370-7101-428b-a529-a33fe749f17a  ...                                                NaN
+1  0054e38a-89d9-4c65-80f8-3db5616d1899  ...                                                NaN
+2  2bf5cbc8-2886-4813-8663-345259fec457  ...                                                NaN
+3  af6ef77c-8da4-4dfb-982e-78a9f8afe5b5  ...                                                NaN
+4  87b1ae00-1435-4d79-9ce2-c64cf43adebb  ...                                                NaN
+5  fbe0c299-b100-4638-ad5c-5352b58b6b3e  ...  page_args%3D2df4e370-7101-428b-a529-a33fe749f1...
+
+[6 rows x 42 columns]
+2023-07-05 13:25:07,087 - INFO - Cancel buy order 2df4e370-7101-428b-a529-a33fe749f17a
+2023-07-05 13:25:07,266 - INFO - Cancel buy order 0054e38a-89d9-4c65-80f8-3db5616d1899
+2023-07-05 13:25:07,446 - INFO - Cancel buy order 2bf5cbc8-2886-4813-8663-345259fec457
+2023-07-05 13:25:07,624 - INFO - Cancel sell order af6ef77c-8da4-4dfb-982e-78a9f8afe5b5
+2023-07-05 13:25:08,091 - INFO - Cancel sell order 87b1ae00-1435-4d79-9ce2-c64cf43adebb
+2023-07-05 13:25:08,270 - INFO - Cancel sell order fbe0c299-b100-4638-ad5c-5352b58b6b3e
+2023-07-05 13:25:08,449 - INFO - Cancelled 3 longs and 3 shorts
+2023-07-05 13:25:08,450 - INFO - usdt order size for new orders: 220.34295361 using 1x leverage
+2023-07-05 13:25:08,450 - INFO - coin order size for new orders: 11357.88420670103
+2023-07-05 13:25:08,451 - INFO - rounded coin order size for new orders: 11357.0
+2023-07-05 13:25:08,451 - INFO - Place ema_low_1 Long Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01935$
+2023-07-05 13:25:08,629 - INFO - Place ema_low_2 Long Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01925$
+2023-07-05 13:25:08,809 - INFO - Place ema_low_3 Long Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01915$
+2023-07-05 13:25:08,982 - INFO - Place ema_high_1 Short Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01955$
+2023-07-05 13:25:09,147 - INFO - Place ema_high_2 Short Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01965$
+2023-07-05 13:25:09,325 - INFO - Place ema_high_3 Short Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01975$
+2023-07-05 13:25:09,498 - INFO - --- End Execution Time: 05/07/2023 13:25:09 ---
+2023-07-05 13:25:09,498 - INFO - 
