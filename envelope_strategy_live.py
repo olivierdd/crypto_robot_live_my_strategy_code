@@ -52,13 +52,13 @@ account_to_select = 'real_account'
 production = True
 
 # -- Coins & timeframe --
-timeframe = '5m'
+timeframe = '1h'
 pair = "VET/USDT:USDT"
 leverage = 1
 log_me(f"--- {pair} {timeframe} Leverage x {leverage} ---")
 
 # -- Indicator variable --
-ema_shifts = [0.005, 0.01, 0.015]
+ema_shifts = [0.05, 0.1, 0.15]
 ema_period = 5
 
 # -- Rules --
@@ -133,7 +133,12 @@ log_me('Open orders')
 log_me(df_orders)
 
 # Get data
-df = bybit.get_more_last_historical_async(pair, timeframe, 5)
+"""
+Reminder: you need to adjust the limit parameter in function of the timeframe you use
+On lower timeframes bybit will not provide the must up to date ohlc priced if the 
+limit is too high
+"""
+df = bybit.get_more_last_historical_async(pair, timeframe, 30)
 
 
 # --- POPULATE INDICATORS ---
