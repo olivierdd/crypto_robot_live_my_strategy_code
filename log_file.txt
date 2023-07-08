@@ -809,3 +809,74 @@ Index: []
 2023-07-05 13:25:09,325 - INFO - Place ema_high_3 Short Limit Order: 11357.0 VET/USDT:USDT at the price of 0.01975$
 2023-07-05 13:25:09,498 - INFO - --- End Execution Time: 05/07/2023 13:25:09 ---
 2023-07-05 13:25:09,498 - INFO - 
+2023-07-08 08:43:28,581 - INFO - ================================================================================
+2023-07-08 08:43:28,582 - INFO - --- Start Execution Time : 08/07/2023 08:43:28 ---
+2023-07-08 08:44:43,415 - INFO - ================================================================================
+2023-07-08 08:44:43,418 - INFO - Start Execution Time : 08/07/2023 08:44:43
+2023-07-08 08:44:43,419 - INFO - --------------------------------------------------------------------------------
+2023-07-08 08:44:54,395 - INFO - ================================================================================
+2023-07-08 08:44:54,395 - INFO - Start Execution Time : 08/07/2023 08:44:54
+2023-07-08 08:44:54,395 - INFO - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+2023-07-08 08:45:10,584 - INFO - ================================================================================
+2023-07-08 08:45:10,584 - INFO - Start Execution Time : 08/07/2023 08:45:10
+2023-07-08 08:45:10,584 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 08:48:01,135 - INFO - Launching bot with VET/USDT:USDT on 1h and Leverage x 1
+2023-07-08 10:17:55,906 - INFO - /n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=/n=
+2023-07-08 10:17:55,908 - INFO - Start Execution Time : 08/07/2023 10:17:55
+2023-07-08 10:17:55,908 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:18:21,919 - INFO - 
+2023-07-08 10:18:21,921 - INFO - ================================================================================
+2023-07-08 10:18:21,921 - INFO - Start Execution Time : 08/07/2023 10:18:21
+2023-07-08 10:18:21,921 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:25:22,970 - INFO - available usdt balance: 705.84 $
+2023-07-08 10:25:23,650 - INFO - USD balance: 705.84 $
+2023-07-08 10:25:24,425 - INFO - Positions
+2023-07-08 10:25:24,429 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 10:25:24,934 - INFO - Open orders
+2023-07-08 10:25:24,936 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 10:33:29,575 - INFO - 
+2023-07-08 10:33:29,576 - INFO - ================================================================================
+2023-07-08 10:33:29,576 - INFO - Start Execution Time : 08/07/2023 10:33:29
+2023-07-08 10:33:31,061 - INFO - Launching bot with VET/USDT:USDT on 1h and Leverage x 1
+2023-07-08 10:33:31,061 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:33:39,011 - INFO - CHECKING BALANCES, POSITIONS AND ORDERS
+2023-07-08 10:33:39,013 - INFO - available usdt balance: 705.84 $
+2023-07-08 10:33:39,554 - INFO - USD balance: 705.84 $
+2023-07-08 10:33:40,243 - INFO - 
+2023-07-08 10:33:40,244 - INFO - Positions
+2023-07-08 10:33:40,244 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 10:33:40,763 - INFO - 
+2023-07-08 10:33:40,765 - INFO - Open orders
+2023-07-08 10:33:40,766 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 10:33:40,767 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:33:49,911 - INFO - COMPUTE INDICATORS
+2023-07-08 10:33:49,927 - INFO - - ema base : 0.01869664977848219
+2023-07-08 10:33:49,928 - INFO - - ema high 1 : 0.0196314822674063
+2023-07-08 10:33:49,928 - INFO - - ema low 1 : 0.01776181728955808
+2023-07-08 10:33:49,931 - INFO - - ema high 2 : 0.02056631475633041
+2023-07-08 10:33:49,931 - INFO - - ema low 2 : 0.016826984800633972
+2023-07-08 10:33:49,931 - INFO - - ema high 3 : 0.02150114724525452
+2023-07-08 10:33:49,932 - INFO - - ema low 3 : 0.015892152311709862
+2023-07-08 10:33:49,932 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:33:53,025 - INFO - MANAGE ORDERS
+2023-07-08 10:33:53,025 - INFO - Cancelled 0 longs and 0 shorts
+2023-07-08 10:33:54,324 - INFO - usdt order size for new orders: 235.28165952333333 using 1x leverage
+2023-07-08 10:33:54,324 - INFO - coin order size for new orders: 12514.981889539007
+2023-07-08 10:33:54,324 - INFO - rounded coin order size for new orders: 12514.0
+2023-07-08 10:33:54,324 - INFO - Place ema_low_1 Long Limit Order: 12514.0 VET/USDT:USDT at the price of 0.01775 and tp at 0.0187
+2023-07-08 10:33:54,847 - INFO - Place ema_low_2 Long Limit Order: 12514.0 VET/USDT:USDT at the price of 0.01685 and tp at 0.0187
+2023-07-08 10:33:55,361 - INFO - Place ema_low_3 Long Limit Order: 12514.0 VET/USDT:USDT at the price of 0.0159 and tp at 0.0187
+2023-07-08 10:33:55,878 - INFO - Place ema_high_1 Short Limit Order: 12514.0 VET/USDT:USDT at the price of 0.01965 and tp at 0.0187
+2023-07-08 10:33:56,391 - INFO - Place ema_high_2 Short Limit Order: 12514.0 VET/USDT:USDT at the price of 0.02055 and tp at 0.0187
+2023-07-08 10:33:56,917 - INFO - Place ema_high_3 Short Limit Order: 12514.0 VET/USDT:USDT at the price of 0.0215 and tp at 0.0187
+2023-07-08 10:33:57,466 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 10:33:58,634 - INFO - --- End Execution Time: 08/07/2023 10:33:58 ---
+2023-07-08 10:33:58,634 - INFO - 

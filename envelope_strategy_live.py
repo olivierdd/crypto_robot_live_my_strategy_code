@@ -5,6 +5,7 @@
 # --- IMPORT LIBS ---
 import os
 my_dir = "/home/oddc/crypto_robot_live/"
+#my_dir = "/Users/olivierdedecker/Documents/00_Dev/Python/Crypto_Robot_live/"
 lib_file_path = os.path.join(my_dir, 'live_tools', 'utilities')
 import sys
 sys.path.append(lib_file_path)
@@ -37,8 +38,8 @@ now = datetime.now()
 current_time = now.strftime("%d/%m/%Y %H:%M:%S")
 current_time_python = now.timestamp()
 log_me("")
-log_me(f"--- Start Execution Time : {current_time} ---")
-
+log_me("="*80)
+log_me(f"Start Execution Time : {current_time}")
 
 # --- PARAMETERS & VARIABLES ---
 # -- Account --
@@ -56,6 +57,7 @@ timeframe = '1h'
 pair = "VET/USDT:USDT"
 leverage = 1
 log_me(f"--- {pair} {timeframe} Leverage x {leverage} ---")
+log_me("-   "*20)
 
 # -- Indicator variable --
 ema_shifts = [0.05, 0.1, 0.15]
@@ -63,7 +65,7 @@ ema_period = 5
 
 # -- Rules --
 nLevel = len(ema_shifts)            # max number of open positions per coin
-position_type = ["long", "short"]
+position_type = ["long", "short"]   # indicate which kind of positions may be used
 open_position_asap = True
 close_position_with_indicator = False
 
@@ -108,6 +110,7 @@ bybit = PerpBybit(
 # get portfolio balance data from exchange
 usdt_equity = float(bybit.get_usdt_equity())
 usdt_available_balance = float(bybit.get_usdt_available_balance())
+log_me('CHECKING BALANCES, POSITIONS AND ORDERS')
 log_me(f'available usdt balance: {usdt_available_balance:.2f} $')
 
 # get balance, position and order data
@@ -119,6 +122,7 @@ position_list = [
     {"side": d["side"], "size": float(d["contracts"]) * float(d["contractSize"]), "market_price":d["markPrice"], "usd_size": float(d["contracts"]) * float(d["contractSize"]) * float(d["markPrice"]), "open_price": d["entryPrice"]}
     for d in positions_data if d["symbol"] == pair]
 df_position = pd.DataFrame(position_list)
+log_me('')
 log_me('Positions')
 log_me(df_position)
 
@@ -129,8 +133,10 @@ df_orders = pd.DataFrame(orders_list)
 if df_orders.empty == False:
     df_orders["price"] = pd.to_numeric(df_orders["price"])
     df_orders["qty"] = pd.to_numeric(df_orders["qty"])
+log_me('')
 log_me('Open orders')
 log_me(df_orders)
+log_me("-   "*20)
 
 # Get data
 """
@@ -142,6 +148,7 @@ df = bybit.get_more_last_historical_async(pair, timeframe, 30)
 
 
 # --- POPULATE INDICATORS ---
+log_me("COMPUTE INDICATORS")
 sell_ema_values={}
 buy_ema_values={}
 df.drop(columns=df.columns.difference(['open','high','low','close','volume']), inplace=True)
@@ -152,9 +159,10 @@ for i, shift in enumerate(ema_shifts, start=1):
     df[f'ema_low_{i}'] = df['ema_base'] * (1 - shift)
     sell_ema_values[f'ema_high_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_high_{i}'])
     buy_ema_values[f'ema_low_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_low_{i}'])
-
+log_me("-   "*20)
 
 # --- CANCEL OPEN UNFILLED ORDERS ---
+log_me("MANAGE ORDERS")
 cancelled_longs = []
 cancelled_shorts = []
 
@@ -218,7 +226,7 @@ if len(positions_data) > 0:
 # Create new limit orders for remaining slots
 if open_long(row) and "long" in position_type:
     for ema, ema_value in buy_ema_values.items():
-        if (ema in cancelled_longs) or df_orders.empty or len(positions_data)==0:
+        if (ema in cancelled_longs) or df_orders.empty or len(df_position)==0:
             log_me(f"Place {ema} Long Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
             if production:
                 order = bybit.place_limit_order(
@@ -234,7 +242,7 @@ if open_long(row) and "long" in position_type:
 
 if open_short(row) and "short" in position_type:
     for ema, ema_value in sell_ema_values.items():
-        if (ema in cancelled_shorts) or df_orders.empty or len(positions_data)==0:
+        if (ema in cancelled_shorts) or df_orders.empty or len(df_position)==0:
             log_me(f"Place {ema} Short Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
             if production:
                 order = bybit.place_limit_order(
@@ -247,10 +255,10 @@ if open_short(row) and "short" in position_type:
                     reduce=False,
                     orderLinkId=f'{ema}{unique_id}'
                 )
-
+log_me("-   "*20)
 
 # --- CLOSE ---
 now = datetime.now()
 current_time = now.strftime("%d/%m/%Y %H:%M:%S")
-log_me(f"--- End Execution Time: {current_time} ---")
+log_me(f"End Execution Time: {current_time}")
 log_me("")
