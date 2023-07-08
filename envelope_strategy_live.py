@@ -39,6 +39,9 @@ current_time = now.strftime("%d/%m/%Y %H:%M:%S")
 current_time_python = now.timestamp()
 log_me("")
 log_me("="*80)
+log_me("STARTING BOT")
+log_me("------------")
+log_me("")
 log_me(f"Start Execution Time : {current_time}")
 
 # --- PARAMETERS & VARIABLES ---
@@ -56,7 +59,8 @@ production = True
 timeframe = '1h'
 pair = "VET/USDT:USDT"
 leverage = 1
-log_me(f"--- {pair} {timeframe} Leverage x {leverage} ---")
+log_me(f"Launching bot with {pair} on {timeframe} and Leverage x {leverage}")
+log_me("")
 log_me("-   "*20)
 
 # -- Indicator variable --
@@ -99,6 +103,9 @@ def close_short(row):
         
 
 # --- INITIALIZE EXCHANGE & GET BALANCE ---
+log_me('CHECKING BALANCES, POSITIONS AND ORDERS')
+log_me('---------------------------------------')
+log_me("")
 # connect exchange
 bybit = PerpBybit(
     apiKey=secret[account_to_select]["apiKey"],
@@ -110,7 +117,6 @@ bybit = PerpBybit(
 # get portfolio balance data from exchange
 usdt_equity = float(bybit.get_usdt_equity())
 usdt_available_balance = float(bybit.get_usdt_available_balance())
-log_me('CHECKING BALANCES, POSITIONS AND ORDERS')
 log_me(f'available usdt balance: {usdt_available_balance:.2f} $')
 
 # get balance, position and order data
@@ -137,6 +143,7 @@ log_me('')
 log_me('Open orders')
 log_me(df_orders)
 log_me("-   "*20)
+log_me('')
 
 # Get data
 """
@@ -149,20 +156,29 @@ df = bybit.get_more_last_historical_async(pair, timeframe, 30)
 
 # --- POPULATE INDICATORS ---
 log_me("COMPUTE INDICATORS")
+log_me("------------------")
+log_me("")
 sell_ema_values={}
 buy_ema_values={}
 df.drop(columns=df.columns.difference(['open','high','low','close','volume']), inplace=True)
 
 df['ema_base'] = ta.trend.ema_indicator(close=df['close'], window=ema_period)
+log_me(f'ema base : {df.iloc[-1]["ema_base"]}')
 for i, shift in enumerate(ema_shifts, start=1):
     df[f'ema_high_{i}'] = df['ema_base'] * (1 + shift)
     df[f'ema_low_{i}'] = df['ema_base'] * (1 - shift)
+    log_me(f'ema high {i} : {df.iloc[-1]["ema_high_" + str(i)]}')
+    log_me(f'ema low {i} : {df.iloc[-1][f"ema_low_" + str(i)]}')
+
     sell_ema_values[f'ema_high_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_high_{i}'])
     buy_ema_values[f'ema_low_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_low_{i}'])
+log_me("")
 log_me("-   "*20)
 
 # --- CANCEL OPEN UNFILLED ORDERS ---
 log_me("MANAGE ORDERS")
+log_me("-------------")
+log_me("")
 cancelled_longs = []
 cancelled_shorts = []
 
