@@ -934,3 +934,23 @@ Index: []
 [4 rows x 42 columns]
 2023-07-08 11:04:31,687 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
 2023-07-08 11:04:31,687 - INFO - 
+2023-07-08 11:08:44,754 - INFO - Launching bot with VET/USDT:USDT on 1h and Leverage x 1
+2023-07-08 11:08:44,757 - INFO - 
+2023-07-08 11:08:44,757 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 11:08:45,670 - INFO - CHECKING BALANCES, POSITIONS AND ORDERS
+2023-07-08 11:08:45,670 - INFO - ---------------------------------------
+2023-07-08 11:08:45,670 - INFO - 
+2023-07-08 11:08:49,729 - INFO - available usdt balance: 471.78 $
+2023-07-08 11:08:49,939 - INFO - USD balance: 768.71 $
+2023-07-08 11:08:50,491 - INFO - 
+2023-07-08 11:08:50,491 - INFO - Positions
+2023-07-08 11:08:50,492 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 11:08:51,028 - INFO - 
+2023-07-08 11:08:51,028 - INFO - Open orders
+2023-07-08 11:08:51,029 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 11:08:51,029 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 11:08:51,029 - INFO - 
