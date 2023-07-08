@@ -880,3 +880,57 @@ Index: []
 2023-07-08 10:33:57,466 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
 2023-07-08 10:33:58,634 - INFO - --- End Execution Time: 08/07/2023 10:33:58 ---
 2023-07-08 10:33:58,634 - INFO - 
+2023-07-08 11:04:19,231 - INFO - 
+2023-07-08 11:04:19,236 - INFO - ================================================================================
+2023-07-08 11:04:19,237 - INFO - STARTING BOT
+2023-07-08 11:04:19,237 - INFO - ------------
+2023-07-08 11:04:19,237 - INFO - 
+2023-07-08 11:04:19,237 - INFO - Start Execution Time : 08/07/2023 11:04:19
+2023-07-08 11:04:21,377 - INFO - Launching bot with VET/USDT:USDT on 1h and Leverage x 1
+2023-07-08 11:04:21,377 - INFO - 
+2023-07-08 11:04:21,377 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 11:04:25,138 - INFO - CHECKING BALANCES, POSITIONS AND ORDERS
+2023-07-08 11:04:25,138 - INFO - ---------------------------------------
+2023-07-08 11:04:25,140 - INFO - 
+2023-07-08 11:04:30,226 - INFO - available usdt balance: 470.28 $
+2023-07-08 11:04:30,465 - INFO - USD balance: 767.21 $
+2023-07-08 11:04:31,118 - INFO - 
+2023-07-08 11:04:31,118 - INFO - Positions
+2023-07-08 11:04:31,120 - INFO - Empty DataFrame
+Columns: []
+Index: []
+2023-07-08 11:04:31,677 - INFO - 
+2023-07-08 11:04:31,677 - INFO - Open orders
+2023-07-08 11:04:31,682 - INFO -                                 orderId orderLinkId blockTradeId   symbol  \
+0  ed82c16f-a51d-43f0-8801-6ab6144e351b                           XVGUSDT   
+1  e626e709-951a-47d5-b366-93704d2433c4                           XVGUSDT   
+2  56b8d02b-4068-4c4d-9072-54a215ede28f                           SOLUSDT   
+3  ff69eee4-1276-4289-9128-0bbd37298c24                           SOLUSDT   
+
+   price      qty  side isLeverage positionIdx  orderStatus  ... smpType  \
+0    0.0  50000.0  Sell                      0  Untriggered  ...    None   
+1    0.0  50000.0  Sell                      0  Untriggered  ...    None   
+2    0.0     30.0  Sell                      1  Untriggered  ...    None   
+3    0.0     30.0  Sell                      1  Untriggered  ...    None   
+
+  smpGroup smpOrderId tpslMode tpLimitPrice slLimitPrice placeType  \
+0        0                Full                                       
+1        0                Full                                       
+2        0                Full                                       
+3        0                Full                                       
+
+     createdTime    updatedTime  \
+0  1688737581299  1688737616967   
+1  1688737616967  1688737616967   
+2  1688737919774  1688737919774   
+3  1688737919774  1688737919774   
+
+                                      nextPageCursor  
+0                                                NaN  
+1                                                NaN  
+2  page_args%3Ded82c16f-a51d-43f0-8801-6ab6144e35...  
+3                                                NaN  
+
+[4 rows x 42 columns]
+2023-07-08 11:04:31,687 - INFO - -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   
+2023-07-08 11:04:31,687 - INFO - 

@@ -52,6 +52,7 @@ secret = json.load(f)
 f.close()
 
 exchange_name = 'bybit'
+#account_to_select = 'testnet_account'
 account_to_select = 'real_account'
 production = True
 
@@ -134,7 +135,8 @@ log_me(df_position)
 
 orders_list = []
 for order in bybit.get_open_orders():
-    orders_list.append(order["info"])
+    if order['symbol']==pair:
+        orders_list.append(order["info"])
 df_orders = pd.DataFrame(orders_list)
 if df_orders.empty == False:
     df_orders["price"] = pd.to_numeric(df_orders["price"])
