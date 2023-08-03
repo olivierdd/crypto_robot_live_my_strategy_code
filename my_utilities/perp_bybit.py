@@ -190,6 +190,7 @@ class PerpBybit():
                 'reduce_only': reduce,
                 'orderLinkId': orderLinkId,
                 'positionIdx': 1,
+                'reduceOnly': false,
             }
             if sl is not None:
                 params['stopLoss'] = self.convert_price_to_precision(symbol, sl)
