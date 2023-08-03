@@ -8,7 +8,8 @@ Ce projet propose une implémentation Python de la [stratégie Envelope décrite
 
 Répertoire 'my_strategies_live' :
 Dans ce répertoire se trouvent deux scripts .py. Le premier implémente la stratégie pour une paire.
-Le second implémente la stratégie pour de multiples paires et propose en plus la gestion d'un stop loss
+Le second implémente la stratégie pour de multiples paires et propose en plus la gestion d'un stop loss.
+J'ai également mis les notebooks Jupyter qui avec lesquels j'ai travaillé pour construire le code.
 
 # installation
 Le code nécessite un certain nombre de librairies, à installer séparément :
