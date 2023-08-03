@@ -189,7 +189,7 @@ class PerpBybit():
             params = {
                 'reduce_only': reduce,
                 'orderLinkId': orderLinkId,
-                'positionIdx': 1,
+                'positionIdx': 0,
                 'reduceOnly': False,
             }
             if sl is not None:
