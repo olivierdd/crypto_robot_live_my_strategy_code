@@ -82,7 +82,7 @@ production = True
 # -- Coins & timeframe --
 timeframe = '1h'
 pair_list = ["DYDX/USDT:USDT", "GFT/USDT:USDT"]
-log_me(f"Launching bot with {pair_list} on {timeframe} and Leverage x {leverage}")
+log_me(f"Launching bot with {pair_list} on {timeframe}")
 log_me("")
 log_me("-   "*20)
 
