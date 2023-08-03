@@ -1,12 +1,16 @@
-# ---------------------------
-# ENVELOPE STRATEGY LIVE CODE
-# ---------------------------
+# ---------------------------------------
+# SINGLE COIN ENVELOPE STRATEGY LIVE CODE
+# ---------------------------------------
 
 # --- IMPORT LIBS ---
 import os
-my_dir = "/home/oddc/crypto_robot_live/"
-#my_dir = "/Users/olivierdedecker/Documents/00_Dev/Python/Crypto_Robot_live/"
-lib_file_path = os.path.join(my_dir, 'live_tools', 'utilities')
+try:
+    current_path = os.path.dirname(os.path.abspath(__file__))
+    my_dir = os.path.dirname(current_path)
+except:
+    current_path = os.getcwd()
+    my_dir = os.path.dirname(current_path)
+lib_file_path = os.path.join(my_dir, 'my_utilities')
 import sys
 sys.path.append(lib_file_path)
 import ta
@@ -18,11 +22,11 @@ import logging
 
 
 # --- CONFIGURE LOGGER --
-log_file_path = os.path.join(my_dir, 'my_code', 'log_file.txt')
-print(log_file_path)
+log_file_path = os.path.join(my_dir, 'log_file_single_envelope_live.txt')
+print(f'Logging to: {log_file_path}')
 logging.basicConfig(filename = log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-showLog = False
+showLog = True
 
 def log_me(message):
     if showLog:
@@ -46,7 +50,7 @@ log_me(f"Start Execution Time : {current_time}")
 
 # --- PARAMETERS & VARIABLES ---
 # -- Account --
-secret_file_path = os.path.join(my_dir, 'live_tools', 'secret.json')
+secret_file_path = os.path.join(my_dir, 'secret.json')
 f = open(secret_file_path)
 secret = json.load(f)
 f.close()
@@ -155,6 +159,10 @@ limit is too high
 """
 df = bybit.get_more_last_historical_async(pair, timeframe, 30)
 
+for order in bybit.get_open_orders():
+    if order['symbol']==pair:
+        print(order)
+
 
 # --- POPULATE INDICATORS ---
 log_me("COMPUTE INDICATORS")
@@ -171,11 +179,11 @@ for i, shift in enumerate(ema_shifts, start=1):
     df[f'ema_low_{i}'] = df['ema_base'] * (1 - shift)
     log_me(f'ema high {i} : {df.iloc[-1]["ema_high_" + str(i)]}')
     log_me(f'ema low {i} : {df.iloc[-1][f"ema_low_" + str(i)]}')
-
     sell_ema_values[f'ema_high_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_high_{i}'])
     buy_ema_values[f'ema_low_{i}'] = bybit.convert_price_to_precision(pair, df.iloc[-1][f'ema_low_{i}'])
 log_me("")
 log_me("-   "*20)
+
 
 # --- CANCEL OPEN UNFILLED ORDERS ---
 log_me("MANAGE ORDERS")
@@ -211,8 +219,9 @@ row = df.iloc[-2]
 unique_id = f"#{uuid.uuid4()}"
 
 # Determine order size
+#available_positions = 1
 market_price = float(df.iloc[-1]['close'])
-usdt_position_size = usdt_available_balance
+usdt_position_size = usdt_available_balance #/ available_positions
 usdt_order_size = (usdt_position_size*leverage) / nLevel
 log_me(f'usdt order size for new orders: {usdt_order_size} using {leverage}x leverage')
 coin_order_size = usdt_order_size / market_price
@@ -245,7 +254,7 @@ if len(positions_data) > 0:
 if open_long(row) and "long" in position_type:
     for ema, ema_value in buy_ema_values.items():
         if (ema in cancelled_longs) or df_orders.empty or len(df_position)==0:
-            log_me(f"Place {ema} Long Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
+            log_me(f"Place {ema} Long Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value} and tp at {bybit.convert_price_to_precision(pair, df.iloc[-1]['ema_base'])}")
             if production:
                 order = bybit.place_limit_order(
                     symbol=pair,
@@ -261,7 +270,7 @@ if open_long(row) and "long" in position_type:
 if open_short(row) and "short" in position_type:
     for ema, ema_value in sell_ema_values.items():
         if (ema in cancelled_shorts) or df_orders.empty or len(df_position)==0:
-            log_me(f"Place {ema} Short Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value}$")
+            log_me(f"Place {ema} Short Limit Order: {rounded_coin_order_size} {pair} at the price of {ema_value} and tp at {bybit.convert_price_to_precision(pair, df.iloc[-1]['ema_base'])}")
             if production:
                 order = bybit.place_limit_order(
                     symbol=pair,

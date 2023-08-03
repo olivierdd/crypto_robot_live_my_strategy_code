@@ -80,6 +80,10 @@ class PerpBybit():
         result.index = pd.to_datetime(result.index, unit='ms')
         del result['timestamp']
         return result.sort_index()
+    
+    def fetch_markets(self, params=None):
+        result = pd.DataFrame(data=self._session.fetch_markets(params))
+        return result
 
 #   account data
 
@@ -182,17 +186,22 @@ class PerpBybit():
     @authentication_required
     def place_limit_order(self, symbol, side, amount, limit, sl=None, tp=None, reduce=False, orderLinkId=None):
         try:
+            params = {
+                'reduce_only': reduce,
+                'orderLinkId': orderLinkId
+            }
+            if sl is not None:
+                params['stopLoss'] = self.convert_price_to_precision(symbol, sl)
+            if tp is not None:
+                params['takeProfit'] = self.convert_price_to_precision(symbol, tp)
+
             return self._session.create_order(
                 symbol,
                 'limit',
                 side,
                 self.convert_amount_to_precision(symbol, amount),
                 self.convert_price_to_precision(symbol,limit),
-                params = {
-                    'reduce_only': reduce,
-                    'takeProfit': self.convert_price_to_precision(symbol,tp),
-                    'orderLinkId': orderLinkId
-                    },
+                params = params,
             )
         except BaseException as err:
             raise Exception(err)
