@@ -4,7 +4,7 @@ Implémentation Python de la stratégie Envelope de Crypto Robot
 # description
 Remarque importante : projet en cours de développement !
 
-Ce projet propose une implémentation Python de la stratégie Envelope décrite par Crypto Robot (https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiTk4acscGAAxVQSfEDHZKECawQwqsBegQIExAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr0QsWRQYwlI&usg=AOvVaw3Kmf2ywEV5YvbDptSu0wjV&opi=89978449)
+Ce projet propose une implémentation Python de la [stratégie Envelope décrite par Crypto Robot](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiTk4acscGAAxVQSfEDHZKECawQwqsBegQIExAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr0QsWRQYwlI&usg=AOvVaw3Kmf2ywEV5YvbDptSu0wjV&opi=89978449).
 
 Répertoire 'my_strategies_live' :
 Dans ce répertoire se trouvent deux scripts .py. Le premier implémente la stratégie pour une paire.
@@ -30,9 +30,10 @@ Le code nécessite un certain nombre de librairies, à installer séparément :
 Et une librairie qui fait partie du projet
 - perp_bybit
 
-Il est également nécessaire de créer un fichier 'secret.json' à placer dans le répertoire principal du projet
+Il est également nécessaire de créer un fichier 'secret.json' à placer dans le répertoire principal du projet.
 Ce fichier devra contenir les clés API de Bybit. Vous pouvez y mettre à la fois les clé de votre compte testnet.bybit.com
 et celles de votre compte réel. Dans le format suivant :
+```
 {
     "real_account": {
         "apiKey":"votre_clé",
@@ -45,3 +46,4 @@ et celles de votre compte réel. Dans le format suivant :
         "is_real":"False"
     }
 }
+```
