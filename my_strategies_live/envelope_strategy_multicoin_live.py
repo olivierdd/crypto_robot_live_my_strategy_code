@@ -45,7 +45,7 @@ log_file_path = os.path.join(my_dir, 'log_file_multi_envelope_live.txt')
 print(f'Logging to: {log_file_path}')
 logging.basicConfig(filename = log_file_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-showLog = True
+#showLog = True
 
 def log_me(message):
     if showLog:
