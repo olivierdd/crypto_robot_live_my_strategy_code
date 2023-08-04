@@ -13,12 +13,12 @@ A FAIRE
 [x] Vérifier que strat marche quand zero ordres et zero positions
 [x] Vérifier que strat marche quand ordres existent (cancel & replace ordres limite)
 [x] Vérifier que strat marche quand position existe (ajustement prix TP et prix limite ordres restants)
-[ ] Vérifier que strat marche quand TP atteint
-[ ] Vérifier que strat marche quand SL atteint
+[x] Vérifier que strat marche quand TP atteint
+[x] Vérifier que strat marche quand SL atteint
 [x] Ajout stop loss -> (1-x)% du prix d'entrée moyen si Long et (1+x)% si Short
 [ ] Corriger calcul à la fin du commitment (tenir compte positions)
 [ ] Optimiser le code
-[ ] Gérer config sans stop loss
+[x] Gérer config sans stop loss
 """
 
 # --- IMPORT LIBS ---
