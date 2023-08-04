@@ -2,16 +2,14 @@
 Implémentation Python de la stratégie Envelope de Crypto Robot
 
 # description
-Remarque importante : projet en cours de développement !
+Remarque importante : projet en cours de développement ! J'ai testé à minima le code et il tourne sur un VPS sans souci. Mais il est possible que des bugs persistent...
 
 Ce projet propose une implémentation Python de la [stratégie Envelope décrite par Crypto Robot](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiTk4acscGAAxVQSfEDHZKECawQwqsBegQIExAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dr0QsWRQYwlI&usg=AOvVaw3Kmf2ywEV5YvbDptSu0wjV&opi=89978449).
 
 Répertoire 'my_strategies_live' :
 Dans ce répertoire se trouvent deux scripts .py. Le premier implémente la stratégie pour une paire.
-Le second implémente la stratégie pour de multiples paires et propose en plus la gestion d'un stop loss
-
-Répertoire 'my_strategies_backtest' :
-Contient du code draft mais rien qui marche aujourd'hui -> ne pas en tenir compte
+Le second implémente la stratégie pour de multiples paires et propose en plus la gestion d'un stop loss.
+J'ai également mis les notebooks Jupyter qui avec lesquels j'ai travaillé pour construire le code.
 
 # installation
 Le code nécessite un certain nombre de librairies, à installer séparément :
