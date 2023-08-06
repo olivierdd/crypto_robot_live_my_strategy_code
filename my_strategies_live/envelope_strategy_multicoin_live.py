@@ -91,7 +91,7 @@ ema_shifts = [0.05, 0.1, 0.15]
 ema_period = 5
 
 # -- Rules --
-leverage = 0.2
+leverage = 1
 nLevel = len(ema_shifts)            # max number of open positions per coin
 position_type = ["long", "short"]   # indicate which kind of positions may be used
 open_position_asap = True
