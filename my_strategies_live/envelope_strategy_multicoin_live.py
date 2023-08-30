@@ -87,7 +87,7 @@ log_me("")
 log_me("-   "*20)
 
 # -- Indicator variable --
-ema_shifts = [0.05, 0.1, 0.15]
+ema_shifts = [0.03, 0.06]
 ema_period = 5
 
 # -- Rules --
@@ -96,7 +96,7 @@ nLevel = len(ema_shifts)            # max number of open positions per coin
 position_type = ["long", "short"]   # indicate which kind of positions may be used
 open_position_asap = True
 close_position_with_indicator = False
-stop_loss_pc = 0.25                  # % stop loss from average entry price
+stop_loss_pc = 0.1                  # % stop loss from average entry price
 
 
 # --- INITIALIZE EXCHANGE & GET BALANCE ---
