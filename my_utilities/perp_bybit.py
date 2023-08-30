@@ -148,6 +148,20 @@ class PerpBybit():
             return usdt_avail_balance
         except:
             return 0
+        
+    @authentication_required
+    def get_closed_orders(self, symbol=None, since=None, limit=None):
+
+        try:
+            closed_orders = self._session.fetch_closed_orders(symbol, since, limit)
+        except BaseException as err:
+            raise TypeError("An error occured in get_open_position", err)
+        try:
+            return closed_orders
+        except:
+            return 0
+
+
 
     @authentication_required
     def get_orders(self, symbol, since=None):
@@ -160,6 +174,18 @@ class PerpBybit():
             return open_orders
         except:
             return 0
+        
+    @authentication_required
+    def get_unified_account_orders(self, symbol, since=None):
+        try:
+            open_orders = self._session.fetch_unified_account_orders(symbol=symbol, since=since)
+
+        except BaseException as err:
+            raise Exception("An error occured", err)
+        try:
+            return open_orders
+        except:
+            return 0        
 
 #   trade
 
@@ -259,7 +285,6 @@ class PerpBybit():
         
 
 # --- CREATE DATAFRAMES ---
-
 def create_filled_orders_df(orders):
     filled_orders_list = []
     for order in orders:
